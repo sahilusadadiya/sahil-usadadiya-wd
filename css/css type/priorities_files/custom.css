@@ -1,0 +1,11 @@
+/* selector { property:value } */
+/* Never contains HTml Tags */
+h2 {
+    color: brown;
+    background-color: cadetblue;
+}
+
+p{
+    color: antiquewhite;
+    background-color: teal;
+}
