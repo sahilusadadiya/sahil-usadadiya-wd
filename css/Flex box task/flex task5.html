@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///D:/git%20bash/sahil-usadadiya-wd/css/Flex%20box%20task/flex%20task5.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        }
+        .container {
+            display: flex;
+            height: 400px;
+            color: rgb(45, 46, 43);
+            margin: 50px 20px;
+            text-align: center;
+            gap: 20px;
+        }
+        .First-card {
+            align-self: stretch;
+            flex-grow: 6;
+            background-color: rgb(76, 174, 231);
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        }
+        .Second-card {
+            align-self: stretch;
+            flex-grow: 1;
+            background-color: rgba (79, 206, 90, 0.726);
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        }
+        .Third-card {
+            align-self: stretch;
+            flex-grow: 3;
+            background-color: rgb (223, 99, 171);
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+        }
+        .container .First-card h3 {
+            margin: 30px;
+        }
+        .container .Second-card h3 {
+            margin: 30px;
+        }
+        .container .Third-card h3 {
+            margin: 30px;
+        }
+        .First-card :hover {
+            color: white;
+            background-color: rgb(26, 38, 90,);
+            transform: scale(1.02);
+            cursor: pointer;
+            transition: 0.5sec ease-out;
+        }
+        .Second-card :hover {
+            color: white;
+            background-color: rgb(10, 184, 33);
+            transform: scale(1.02);
+            cursor: pointer;
+            transition: 0.5sec ease-out;
+        }
+        .Third-card :hover {
+            color: white;
+            background-color: rgb(143, 16, 122);
+            transform: scale(1.02);
+            cursor: pointer;
+            transition: 0.5sec ease-out;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="First-card">
+          <h3>First Card</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque earum
+            consequuntur molestiae ut placeat. Aliquam nostrum inventore
+            reiciendis fugiat veritatis nulla totam assumenda similique,
+            reprehenderit aut aperiam provident saepe cum.
+          </p>
+        </div>
+        <div class="Second-card">
+          <h3>Second Card</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="Third-card">
+          <h3>Third Card</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto sed
+            reprehenderit enim voluptatem excepturi ut perspiciatis minus magni
+            laborum dolorem?
+          </p>
+        </div>
+      </section>
+
+</body></html>
