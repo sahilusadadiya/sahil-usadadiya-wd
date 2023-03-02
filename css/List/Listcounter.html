@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///D:/git%20bash/sahil-usadadiya-wd/css/List/Listcounter.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ol{
+            counter-reset: section
+            /* creates a new instance of the
+                          section counter with each ol
+                          element */ 
+            list-style-type: none;               
+        }
+
+        li::before {
+            counter-increment: section;
+            /* Increments only this instance
+                                         of the section counter */
+            content: counter(section, ".") " "; 
+           /* Combines the values of all instances
+                                       of the section counter, separated
+                                       by a period */                            
+        }   
+    </style>
+</head>
+<body>
+    <ol>
+        <li>item</li> <!-- 1   -->
+        <li>item <!-- 2   -->
+            <ol>
+                <li>item</li> <!-- 2.1   -->
+                <li>item</li> <!-- 2.2   -->
+                <li>item <!-- 2.3  -->
+                    <ol>
+                        <li>item</li> <!-- 2.3.1 -->
+                        <li>item</li> <!-- 2.3.2 -->
+                    </ol>
+                    <ol>
+                        <li>item</li> <!-- 2.3.1 -->
+                        <li>item</li> <!-- 2.3.2 -->
+                        <li>item</li> <!-- 2.3.3 -->
+                    </ol>
+                </li>
+                <li>item</li> <!-- 2.4   -->    
+            </ol>
+        </li>
+        <li>item</li> <!-- 3    -->
+        <li>item</li> <!-- 4    -->   
+    </ol>
+    <ol>
+        <li>item</li> <!-- 1    -->
+        <li>item</li> <!-- 2    -->
+    </ol>
+
+</body></html>
