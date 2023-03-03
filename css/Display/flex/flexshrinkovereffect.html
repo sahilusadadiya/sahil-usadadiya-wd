@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0083)file:///D:/git%20bash/sahil-usadadiya-wd/css/Display/flex/flexshrinkovereffect.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #content {
+            display: flex;
+            width: 500px;
+        }
+        #content div {
+            flex-basis: 120px;
+            border: 3px solid rgba(red, green, blue, alpha);
+            transition: all .5s;
+        }
+        #content div:hover {
+            flex-basis: 200px;
+        }
+        .box {
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>The width of content is 500px; the flex-basis of the flex item is 120px.</p>
+    <p>A, B, C, have a flex-shrink:1 set. D and E have flex-shrink:2 set</p>
+    <p>The width of D and E is less than the others.</p>
+    <div id="content">
+        <div class="box" style="background-color: brown;">A</div>
+        <div class="box" style="background-color: yellowgreen;">B</div>
+        <div class="box" style="background-color: pink;">C</div>
+        <div class="box1" style="background-color: burlywood;">D</div>
+        <div class="box1" style="background-color: goldenrod;">E</div>
+    </div>
+
+</body></html>
