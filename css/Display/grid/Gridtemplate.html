@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///D:/git%20bash/sahil-usadadiya-wd/css/Display/grid/Gridtemplate.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #page {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-areas: 
+              "head head"
+              "anything main"
+              "footer footer";
+            width: 100%;
+            height: 250px;  
+
+        }
+
+        #page > header {
+            grid-area: head;
+            background-color: brown;
+        }
+        #page > nav {
+            grid-area: anything;
+            background-color: aqua;
+        }
+        #page > main {
+            grid-area: main;
+            background-color: yellowgreen;
+        }
+        #page > footer {
+            grid-area: footer;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <section id="page">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <main>Main area</main>
+        <footer>Footer</footer>
+    </section>
+
+</body></html>
