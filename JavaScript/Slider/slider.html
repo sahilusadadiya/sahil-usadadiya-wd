@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-img{
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+            text-align: center; 
+
+        }
+    </style>
+</head>
+<body>
+
+        <img class="slider-img" src="../Slider/earth-crystal.webp" alt="">
+
+        <img class="slider-img" src="../Slider/istockphoto.jpg" alt="">
+
+        <img class="slider-img" src="../Slider/large-beautiful-drops-transparent-rain-260nw-668593321.webp" alt="">
+
+        <img class="slider-img" src="../Slider/nature-3082832__340.jpg" alt="">
+
+        <img class="slider-img" src="../Slider/Soothing-nature-backgrounds-2-1024x684.jpg" alt="">
+
+        <script>
+            SliderImgs = document.getElementsByClassName("slider-img");
+            console.log(SliderImgs);
+            counter = 0;
+            function Sldier(params) {
+                counter++
+                console.log(counter);
+                for (let index = 0; index < SliderImgs.length;index++) {
+                // const element = SliderImgs[index];
+                console.log(SliderImgs[index]);
+                SliderImgs[index].style.display="none"
+                }
+                SliderImgs[counter].style.display="block"
+                // setInterval(Sldier,3000) 
+                setTimeout(Sldier,2000) 
+
+                
+           } 
+            Sldier()
+        </script>
+    
+</body>
+</html>
