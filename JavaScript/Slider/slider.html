@@ -13,6 +13,13 @@
             text-align: center; 
 
         }
+        .slider-effect{
+            animation: slidereffect 2s;
+        }
+        @keyframes slidereffect {
+            0%{ transform: rotate(10deg) scale(0); }
+            100% {transform: rotate(360deg) scale(1);}
+        }
     </style>
 </head>
 <body>
@@ -32,16 +39,21 @@
             console.log(SliderImgs);
             counter = 0;
             function Sldier(params) {
-                counter++
-                console.log(counter);
+                // console.log(counter);
                 for (let index = 0; index < SliderImgs.length;index++) {
                 // const element = SliderImgs[index];
-                console.log(SliderImgs[index]);
+                // console.log(SliderImgs[index]);
                 SliderImgs[index].style.display="none"
+                SliderImgs[index].classList.remove("slider-effect")
+                }
+                if (counter>=SliderImgs.length){
+                    counter = 0
                 }
                 SliderImgs[counter].style.display="block"
+                SliderImgs[counter].classList.add("slider-effect")
                 // setInterval(Sldier,3000) 
-                setTimeout(Sldier,2000) 
+                counter++
+                setTimeout(Sldier,3000) 
 
                 
            } 
