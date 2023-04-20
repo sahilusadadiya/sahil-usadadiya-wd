@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+}
+.navbar .nav-items li{
+    display: inline-block;
+}
+.navbar .nav-items li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 0 10px;    
+}
+.ml-a {
+    margin-left: auto;
+}
+#header {
+    padding:  20px;
+    line-height: 80px;
+}
+#header .row div{
+    padding: 0 10px;
+}
+.logo{
+    font-weight: 500;
+    font-size: 28px;
+    
+}
+.icon-menu i{
+    display: inline-block;
+    
+}
+.custom-cart{
+    position: relative;
+}
+.cistom-cart::before{
+    z-index: 1;
+    position: relative;
+}
+.custom-cart::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    top: -15px;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+class="header-background">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../task/photo/logo..png" alt="">
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Class</a>
+                <a href="#">Creation</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="search">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                
+            </div>
+            <div class="heart">
+                <i class="fa-solid fa-heart fa-beat"></i>
+            </div>
+            <div class="header-button">
+                <a href="#">login/sign up</a>
+            </div>
+        </nav>
+    </header>
