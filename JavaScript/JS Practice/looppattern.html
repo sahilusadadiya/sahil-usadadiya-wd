@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function PatternRect ()
+        {
+            var i,j,k;
+            var lastrow=10;
+            for(i=1;i<=lastrow;i++)
+            {
+                if(i==1 || i==lastrow)
+                {
+                    for(j=1;j<=10;j++)
+                    {
+                        document.write("*");
+                    }
+                    document.write("<br>");
+                }
+                else
+                {
+                    document.write("*");
+                    for(k=2;k<10;k++)
+                    {
+                        document.write("&nbsp;&nbsp;");
+                    }
+                    document.write("*<br>")
+                }
+            }    
+        }
+        PatternRect ();
+    </script>
+</body>
+</html>
