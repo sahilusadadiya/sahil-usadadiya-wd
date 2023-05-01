@@ -26,15 +26,6 @@
     text-align: center;
 }
 
-
-.po-rel {
-    position: relative;
-}
-
-.po-abs {
-    position: absolute;
-}
-
 .padd {
     padding: 50px 0;
 }
@@ -102,7 +93,7 @@ ul li a {
     margin: 0 auto;
     font-size: 14px;
     padding: 20px 0;
-    /* color: #cbc6c0; */
+    color: #cbc6c0;
     font-weight: 400;
     font-family: "Open Sans";
     text-align: center;
