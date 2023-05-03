@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .add-para {
+            background-color: green;
+            color: red;
+        }
+
+        .remo-para {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae at quis consequuntur magnam
+        necessitatibus, quas cupiditate harum pariatur minima nam laboriosam numquam tempora? Laudantium omnis debitis
+        ab recusandae. Vitae, eligendi?</p>
+    <p class="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae at quis consequuntur magnam
+        necessitatibus, quas cupiditate harum pariatur minima nam laboriosam numquam tempora? Laudantium omnis debitis
+        ab recusandae. Vitae, eligendi?</p>
+    <p class="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae at quis consequuntur magnam
+        necessitatibus, quas cupiditate harum pariatur minima nam laboriosam numquam tempora? Laudantium omnis debitis
+        ab recusandae. Vitae, eligendi?</p>
+    <p class="p4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae at quis consequuntur magnam
+        necessitatibus, quas cupiditate harum pariatur minima nam laboriosam numquam tempora? Laudantium omnis debitis
+        ab recusandae. Vitae, eligendi?</p>
+    <button class="btn">Toggle</button>
+
+
+    <script>
+        let para1 = document.querySelector(".p1")
+        let para2 = document.querySelector(".p2")
+
+        // document.querySelector(".btn").addEventListener("click", function () {
+        //     para1.classList.add("add-para")
+        //     para2.classList.add("remo-para")
+        // })
+
+        document.querySelector(".btn").addEventListener("click", function () {
+
+            if (para1.classList == ("p1")) {
+                para1.classList.add("add-para");
+                console.log("add");
+            }
+            else {
+                para1.classList.remove("add-para");
+                console.log('remove');
+            }
+
+        })
+
+        // -----------------------toggle using function-----------------------------
+        // function toggle() {
+        //     para1.classList.toggle("add-para")
+        // }
+    </script>
+</body>
+
+</html>
