@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p-clr{
+            background-color: orange;
+            color: white;
+            font-size: 30px;
+        }
+        .Test{
+            font-size: 30px ;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="Test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus hic, deserunt
+        sapiente numquam architecto et quo totam illo praesentium? Aliquid quidem fugit atque voluptates veritatis
+        reiciendis facere quod eius!</p>
+    <button id="btn">Click</button>
+    <button id="remove-class">Remove Class</button>
+    <button id="toggle-class">Toggle-Class</button>
+
+    <script>
+        let para = document.querySelector('p')
+        document.getElementById("btn").addEventListener("click",function (){
+            para.classList.add("p-clr")
+        })
+        document.getElementById("remove-class").addEventListener("click",function(){
+            para.classList.remove("p-clr");
+        })
+        document.getElementById("toggle-class").addEventListener("click",function(){
+            console.log(para.classlist);
+            var classes = para.className.replace(/\s{2,}/g, '').split(" ");
+            // console.log(classes);
+            for(i = 0; i < classes.length; i++) {
+                // console.log(classList);
+                if(classes[i] == "p-clr"){
+                    console.log("inside if");
+                    para.classList.remove("p-clr");
+                }else{
+                    para.classList.add("p-clr")
+                    console.log("inside else")
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
