@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(250px, 100px);
+            column-gap: 10px;
+            color: black;
+        }
+
+        .img-1 {
+            background-image: url(../gridtask/images/graps.jpg);
+            grid-column: 1/1;
+            grid-row: 1;
+
+        }
+
+        .img-2 {
+            background-image: url(../gridtask/images/staw.jpg);
+            grid-column: 2/3;
+            grid-row: 1;
+        }
+
+        .img-3 {
+            background-image: url(../gridtask/images/water.jpg);
+            grid-column: 3;
+            grid-row: 1/3;
+        }
+
+        .img-4 {
+            background-image: url(../gridtask/images/ora\ \(1\).jpg);
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+
+        .img-5 {
+            background-image: url(../gridtask/images/papaya.jpg);
+            grid-column: 1/3;
+            grid-row: 3;
+        }
+
+        .img-6 {
+            background-image: url(../gridtask/images/pine.jpg);
+            grid-column: 3;
+            grid-row: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="img-1">image-1</div>
+        <div class="img-2">image-2</div>
+        <div class="img-3">image-3</div>
+        <div class="img-4">image-4</div>
+        <div class="img-5">image-5</div>
+        <div class="img-6">image-6</div>
+    </div>
+
+</body>
+
+</html>
