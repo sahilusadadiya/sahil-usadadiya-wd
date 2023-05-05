@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="post">
+        <table>
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" name="username" onblur="checkreq()" id="username" required>
+                    <span id="usernameerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" name="password" onblur="checkreq()" id="password" required></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input type="text" name="cpassword" onblur="checkreq()" id="cpassword" required></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input type="text" name="mobile" onblur="checkreq()" id="mobile" required pattern="[0-9]+"
+                        minlength="10" maxlength="10" title="please enter number only"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function checkreq() {
+            // console.log("called");
+            let uname = document.getElementById("username").value
+            // console.log(uname);
+            if (uname == "") {
+                // document.getElementById("usernameerror").innerText = "<b>This field is required</b>"
+                document.getElementById("usernameerror").innerHTML = "<b>This field is required</b>"
+            } else {
+                document.getElementById("usernameerror").innerHTML = ""
+            }
+        }
+    </script>
+
+</body>
+
+</html>

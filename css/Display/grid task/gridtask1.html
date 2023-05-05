@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <!-- saved from url=(0079)file:///D:/git%20bash/sahil-usadadiya-wd/css/Display/grid%20task/gridtask1.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,65 +14,76 @@
             padding: 0;
             box-sizing: inherit;
         }
+
         body {
             font-family: sans-serif;
             color: #333;
             font-weight: 300;
             line-height: 1.6;
         }
+
         img {
             width: 100px;
         }
+
         .image {
             display: grid;
-            grid-template-columns: repeat(8,1fr);
-            grid-template-rows: repeat(8,5vw);
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
             grid-gap: 15px;
         }
+
         .photo {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .col_1{
+
+        .col_1 {
             width: 100%;
             grid-column-start: 1;
             grid-column-end: 3;
             grid-row-end: 3;
             grid-row-start: 1;
         }
-        .col_2{
+
+        .col_2 {
             grid-column-start: 3;
             grid-column-end: 5;
             grid-row-end: 3;
             grid-row-start: 1;
         }
-        .col_3{
+
+        .col_3 {
             grid-column-start: 5;
             grid-column-end: 9;
             grid-row-end: 6;
             grid-row-start: 1;
         }
-        .col_4{
+
+        .col_4 {
             grid-column-start: 1;
             grid-column-end: 5;
             grid-row-end: 6;
             grid-row-start: 3;
         }
-        .col_5{
+
+        .col_5 {
             grid-column-start: 1;
             grid-column-end: 5;
             grid-row-end: 9;
             grid-row-start: 6;
-        }    
-        .col_6{
+        }
+
+        .col_6 {
             grid-column-start: 5;
             grid-column-end: 9;
             grid-row-end: 9;
             grid-row-start: 6;
         }
-        </style>
+    </style>
 </head>
+
 <body>
 
     <div class="image">
@@ -80,6 +94,8 @@
         <div class="col_5"><img src="./gridtask1_files/l-intro-1667926753.jpg" class="photo" alt=""></div>
         <div class="col_6"><img src="./gridtask1_files/Pineapple-background.jpg" class="photo" alt=""></div>
     </div>
-    
 
-</body></html>
+
+</body>
+
+</html>

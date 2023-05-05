@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cust-p {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para" class="abc cust-p xyz">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro dolore
+        necessitatibus
+        magnam accusamus natus dignissimos aperiam dolor, architecto et rerum sapiente, saepe aut rem, a vel nisi fugit
+        voluptates consequatur!</p>
+    <!-- <button onclick="btnClicked()">Click</button> -->
+    <button id="btn">Click</button>
+    <p id="test"></p>
+    <script>
+        // function btnClicked() {
+        //     console.log("called");
+        // }
+        document.getElementById("btn").addEventListener("click", function () {
+            console.log("called");
+            var test = document.getElementById("test")
+
+
+            let ParaClassList = document.getElementById("para").classList
+            // testElement.classList.contains(className)
+            // console.log(ParaClassList.contains("cust-p"));
+            if (ParaClassList.contains("cust-p")) {
+                document.getElementById("para").classList.remove("cust-p")
+            } else {
+                document.getElementById("para").classList.add("cust-p")
+            }
+            // for (var i = 0, j = ParaClassList.length; i < j; i++) {
+            //     // console.log(ParaClassList[i]);
+            //     if (ParaClassList[i] == "cust-p") {
+            //         document.getElementById("para").classList.remove("cust-p")
+            //     } else {
+            //         document.getElementById("para").classList.add("cust-p")
+            //     }
+            // }
+
+            // console.log(ParaClassList);
+        })
+    </script>
+</body>
+
+</html>

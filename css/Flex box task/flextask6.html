@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+        div {
+            box-shadow: 1px -1px 0.5px 0.3px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+            padding: 10px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .orange {
+            min-height: 90vh;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .yellow:nth-of-type(1) {
+            min-height: 150px;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .yellow:nth-of-type(2) {
+            flex-direction: row;
+            justify-content: center;
+            min-height: 260px;
+        }
+
+        .yellow:nth-of-type(1) .green:nth-of-type(1) {
+            flex-direction: column;
+            justify-content: flex-end;
+            min-width: 10%;
+        }
+
+        .yellow:nth-of-type(1) .green:nth-of-type(2) {
+            min-width: 15%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .yellow:nth-of-type(1) .green:nth-of-type(2) .cyan {
+            flex-direction: column;
+            justify-content: flex-start;
+            max-height: 10px;
+        }
+
+        .yellow:nth-of-type(2) .green:nth-of-type(1) {
+            min-height: 100%;
+            min-width: 10%;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .yellow:nth-of-type(2) .green:nth-of-type(2) {
+            flex-direction: column;
+            justify-content: flex-end;
+            min-width: 23%;
+            min-height: 15%;
+        }
+
+        .yellow:nth-of-type(2) .green:nth-of-type(2) .purple {
+            flex-direction: row;
+            justify-content: flex-start;
+            min-width: 100%;
+            min-height: 60%;
+        }
+
+        .yellow:nth-of-type(2) .green:nth-of-type(2) .purple .cyan {
+            flex-direction: column;
+            justify-content: flex-start;
+            min-width: 25%;
+        }
+
+        .yellow:nth-of-type(2) .green:nth-of-type(1) .purple:nth-last-of-type(2) {
+            flex-direction: row;
+            justify-content: flex-end;
+            min-height: 10%;
+        }
+
+        .yellow:nth-of-type(2) .green:nth-of-type(1) .purple:nth-last-of-type(1) {
+            min-height: 55%;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /*COLORS*/
+        .orange {
+            background-color: #ffcd9a
+        }
+
+        .yellow {
+            background-color: #ffef9a;
+        }
+
+        .green {
+            background-color: #9affcd;
+        }
+
+        .purple {
+            background-color: #ff9aff;
+        }
+
+        .cyan {
+            background-color: #cbffff;
+        }
+
+        .red {
+            background-color: #ff9999;
+        }
+
+        s
+    </style>
+</head>
+
+<body>
+    <div class="orange">
+        <div class="yellow">
+            <div class="green">
+                <div class="purple"></div>
+            </div>
+            <div class="green">
+                <div class="purple">
+                    <div class="cyan"></div>
+                </div>
+                <div class="purple"></div>
+                <div class="purple"></div>
+            </div>
+        </div>
+
+        <div class="yellow">
+            <div class="green">
+                <div class="purple"></div>
+                <div class="purple">
+                    <div class="cyan"></div>
+                    <div class="cyan"></div>
+                </div>
+            </div>
+            <div class="green">
+                <div class="purple">
+                    <div class="cyan">
+                        <div class="red"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
