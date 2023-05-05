@@ -11,7 +11,7 @@
 
 <body>
     <form method="post">
-        <table border="1" align="center">
+        <table border="1">
             <tr>
                 <td> <label for="username">User name</label> </td>
                 <td><input type="text" name="username" onblur="checkreq(this,'usernameerror')" id="username" required>
@@ -51,6 +51,7 @@
     </form>
     <script>
         function checkreq(inp, spanid) {
+            // console.log("sahil")
             console.log(inp.value);
             if (inp.value == "") {
                 document.getElementById(spanid).innerHTML = "<b>This field is required</b>";
