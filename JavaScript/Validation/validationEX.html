@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation try 2</title>
+
+</head>
+
+<body>
+    <form method="post">
+        <table border="1" align="center">
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" name="username" onblur="checkreq(this,'usernameerror')" id="username" required>
+                    <span id="usernameerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password"> password</label></td>
+                <td><input type="text" name="password" onblur="checkreq(this,'passworderror')" id="password" required>
+                    <span id="passworderror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cpassword"> confirm password</label></td>
+                <td><input type="text" name="cpassword" onblur="checkreq(this,'cpassworderror')" id="cpassword"
+                        required>
+                    <span id="cpassworderror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email"> email</label></td>
+                <td><input type="text" name="email" onblur="checkreq(this,'emailerror')" id="email" required>
+                    <span id="emailerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">mobile</label> </td>
+                <td><input type="text" name="mobile" onblur="checkreq(this,'mobileerror')" id="mobile" required
+                        pattern="[0-9]+" minlength="10" maxlength="10" title="please enter number only">
+                    <span id="mobileerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function checkreq(inp, spanid) {
+            console.log(inp.value);
+            if (inp.value == "") {
+                document.getElementById(spanid).innerHTML = "<b>This field is required</b>";
+            } else {
+                document.getElementById(spanid).innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>
