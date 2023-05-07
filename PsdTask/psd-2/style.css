@@ -1,7 +1,8 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    /* border: 1px solid; */
 }
 
 img {
@@ -10,12 +11,10 @@ img {
 
 .header {
     width: 100%;
-    /* height: 85px; */
-    /* position: fixed; */
+
     position: absolute;
     line-height: 65px;
     text-align: center;
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 85%, #000000 100%); */
 }
 
 .header div.logo {
@@ -593,12 +592,4 @@ footer ul {
     text-align: center;
     line-height: 35px;
     border-radius: 50%;
-}
-
-.row {
-    --bs-gutter-x: 1.5rem;
-}
-
-ul li a:hover {
-    color: rgb(33, 105, 161);
 }
