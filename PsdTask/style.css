@@ -51,7 +51,7 @@
 }
 
 .marg {
-    /* margin-top: 50px; */
+    margin-top: 50px;
 }
 
 /* <section-1 css> */
@@ -370,4 +370,66 @@ ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
+}
+
+/* section-7  */
+.section-7 {
+    background-color: #d5d7dc;
+    padding: 50px 0;
+}
+
+.section-seven {
+
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-seven .left {
+    background-color: white;
+    width: 55%;
+}
+
+.section-seven p {
+    color: #202022;
+}
+
+.section-seven .left {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #6a6a6a;
+    font-size: 500;
+    padding: 40px 0 0 0;
+}
+
+.section-seven P {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #746f6f;
+    font-weight: 300;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section-seven .left .btn {
+    border-radius: 3px;
+    filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.25));
+    background-color: #e74c3c;
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    padding: 16px 20px;
+}
+
+.section-seven .right img {
+    display: block;
+    margin: 0 auto;
 }
