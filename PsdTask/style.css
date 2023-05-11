@@ -519,8 +519,7 @@ image {
     letter-spacing: 4px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+    font-family: sans-serif;
     padding: 130px 0px 10px 0px;
 }
 
@@ -530,8 +529,7 @@ image {
     line-height: 29px;
     color: #f4f5f9;
     font-weight: 400;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
+    font-family: sans-serif;
 }
 
 .image {
