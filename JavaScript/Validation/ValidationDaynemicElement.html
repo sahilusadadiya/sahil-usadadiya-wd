@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" class="thisrequired" name="username" onblur="checkreq(this)" id="username"
+                        required></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" class="thisrequired" name="password" onblur="checkreq(this)" id="password"
+                        required></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input type="text" class="thisrequired" name="cpassword" onblur="checkreq(this)" id="cpassword"
+                        required></td>
+            </tr>
+            <tr>
+                <td>new field</td>
+                <td><input type="text" name="nfield" onblur="checkreq(this)" id="nfield" required></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input type="text" class="thisrequired" name="mobile" onblur="checkreq(this)" id="mobile" required
+                        pattern="[0-9]+" minlength="10" maxlength="10" title="please enter number only"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function checkreq(anything, spnid) {
+            var txt = document.createElement("SPAN");
+            txt.innerHTML = "Whatever text you want to write . . .";
+            if (anything.value == "") {
+                if (anything.nextSibling == null) {
+                    anything.parentNode.appendChild(txt);
+                }
+            } else {
+                if (anything.nextSibling != null) {
+                    if (anything.nextSibling.nodeName == "SPAN") {
+                        anything.nextSibling.remove()
+                    }
+                }
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

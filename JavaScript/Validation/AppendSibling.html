@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button id="btn">Click</button>
+        <!-- <input type="text" name="" id=""> -->
+        <!-- <div class="container" id="container">
+    
+        </div> -->
+    </div>
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            // $('<input/>').attr({type:'text',name:'text'+i}).appendTo('#myform');
+            // console.log(this.parentNode.appendChild);
+            // console.log(this.nextElementSibling);
+            // var textfield = document.createElement("input");
+            // textfield.type = "text";
+            // textfield.value = "";
+            // this.parentNode.appendChild(textfield);
+            // var txt = document.createElement("span");
+            // txt.innerHTML = "Whatever text you want to write . . .";
+            // this.parentNode.appendChild(txt);
+            this.append("append");
+            this.prepend("prepend");
+            this.before("before");
+            this.after("after");
+        })
+    </script>
+</body>
+
+</html>
