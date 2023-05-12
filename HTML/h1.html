@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <!-- <link rel="stylesheet" href="../PSD-TO-HTML/style.css" > -->
+    <!--Google Font	-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome Icon (For Social Media Icon)	-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" />
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .header {
+            width: 100%;
+            /* height: 85px; */
+            /* position: fixed; */
+            position: absolute;
+            line-height: 65px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, #000000 85%, #000000 100%);
+        }
+
+        .header div.logo {
+            float: left;
+            width: auto;
+            height: auto;
+            padding-left: 5rem;
+        }
+
+        .header div.logo a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+
+        .header div.main_list {
+            height: 65px;
+            float: right;
+        }
+
+        .header div.main_list ul {
+            width: 100%;
+            height: 65px;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header div.main_list ul li {
+            width: auto;
+            height: 65px;
+            padding: 4;
+            padding-right: 4rem;
+        }
+
+        .header div.main_list ul li a {
+            text-decoration: none;
+            color: #FFF;
+            line-height: 87px;
+            font-size: 25px;
+        }
+
+        .header div.main_list ul li a:hover {
+            color: #e79119;
+        }
+
+        section.banner-section {
+            background: url(../PSD-TO-HTML/images/background1.png) no-repeat;
+            background-size: cover;
+            min-height: 584px;
+            align-items: center;
+            /* padding: 200px  0px 83px; */
+            width: 100%;
+            padding-top: 100px;
+        }
+
+        .navbar {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
+
+        .banner-text h1 {
+            font-size: 63px;
+            color: #FFF;
+            font-weight: 700;
+            line-height: 74px;
+        }
+
+        .banner-text {
+            max-width: 497px;
+            padding: 113px;
+        }
+
+        .banner-text p {
+            color: #FFF;
+            margin: 42px 0px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .btn {
+            padding: 11px 24px;
+            min-width: 200px;
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        .btn-primary,
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background: #f64b3c !important;
+            border-color: #f64b3c !important;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.8;
+        }
+
+        .btn-primary {
+            color: white;
+        }
+
+        /*Chef Section*/
+        .chef-section {
+            background: url(../PSD-TO-HTML/images/chef-bg.jpg);
+            text-align: center;
+            background-size: cover;
+            padding: 100px 0px;
+        }
+
+        .chef-media img {
+            border-radius: 50%;
+        }
+
+        .chef-info {
+            color: #f64b3c;
+            margin-top: 30px;
+        }
+
+        .card1 {
+            display: flex;
+            gap: 100px;
+            justify-content: space-evenly;
+            margin: 0px 190px;
+        }
+
+        .section-title {
+            font-size: 50px;
+            font-weight: 700;
+            color: #f64b3c;
+        }
+
+        .intro-main p {
+            color: #f64b3c;
+            font-size: 20px;
+        }
+
+        .intro-main {
+            max-width: 650px;
+            margin: 0px auto 40px;
+        }
+
+        .chef-info h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0;
+            font-size: 24px;
+        }
+
+        .chef-info h4 {
+            font-size: calc(1.275rem + .3vw);
+        }
+
+        .card1 h6 {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+
+        /*Chef Section end*/
+        /*Shop Section*/
+        section.shop-section {
+            background: #f64b3c;
+            padding: 100px 0px;
+        }
+
+        .col-md-5 {
+            flex: 0 0 auto;
+            width: 41.66666667%;
+        }
+
+        .container-fluid {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .container {
+            width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .col-md-7 {
+            flex: 0 0 auto;
+            width: 58.33333333%;
+        }
+
+        .row {
+            display: flex;
+            margin: 0 -15px;
+        }
+
+        h2 {
+            font-size: 45px;
+            font-weight: 700;
+        }
+
+        .btn-white {
+            background: #FFF;
+            color: #f64b3c;
+        }
+
+        .btn-white:hover,
+        .btn-white:focus {
+            color: #000000;
+        }
+
+        .shop-text {
+            color: #FFF;
+            max-width: 500px;
+            margin-left: auto;
+        }
+
+        .shop-text p {
+            margin: 30px 0px 50px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .btn {
+            min-width: 120px;
+            font-size: 12px;
+        }
+
+        .btn-white {
+            background: #FFF;
+            color: #f64b3c;
+        }
+
+        .btn {
+            padding: 11px 24px;
+            min-width: 200px;
+            font-size: 17px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-radius: 50px;
+        }
+
+        /*Order Section*/
+        .color-primary {
+            color: #f64b3c !important;
+        }
+
+        .order-text p {
+            margin: 40px 0px;
+        }
+
+        .col-md-6 {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
+        section.order-section {
+            background: url(../PSD-TO-HTML/images/Background3.png) no-repeat;
+            background-size: cover;
+            padding: 100px 0px;
+        }
+
+        .order-text {
+            max-width: 500px;
+            font-size: 18px;
+        }
+
+        .order-text p {
+            margin: 40px 0px;
+        }
+
+        /*Stats Section*/
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 33.33333333%;
+        }
+
+        section.stats-section h2,
+        section.stats-section p {
+            color: #FFF;
+        }
+
+        .intro-mein {
+            max-width: 650px;
+            margin: 0px auto 40px;
+        }
+
+        .stats-box h3 {
+            font-size: 71px;
+            font-weight: 700;
+            margin-bottom: 0;
+            line-height: 66px;
+        }
+
+        .stats-box p {
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .stats-section {
+            background-color: #f64b3c;
+            text-align: center;
+            background-size: cover;
+            padding: 100px 0px;
+            color: #FFF;
+
+        }
+
+        .chef-media img {
+            border-radius: 50%;
+        }
+
+        .stats-box {
+            width: 249px;
+            height: 85px;
+            border: 5px solid #FFF;
+            padding: 80px 0px;
+            border-radius: 50%;
+            flex-direction: column;
+
+        }
+
+        .chef-info {
+            color: #f64b3c;
+            margin-top: 30px;
+        }
+
+        .card1 {
+            display: flex;
+            gap: 100px;
+            justify-content: space-evenly;
+            margin: 55px 190px;
+        }
+
+        .section-title {
+            font-size: 50px;
+            font-weight: 700;
+            color: #f64b3c;
+        }
+
+        .intro-mein p {
+            color: #f64b3c;
+            font-size: 23px;
+        }
+
+        .intro-mein {
+            max-width: 650px;
+            margin: 0px auto 40px;
+        }
+
+        .chef-info h3 {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 0;
+            font-size: 24px;
+        }
+
+        /*Pricing Section*/
+
+        section.pricing-section {
+            background: url(../PSD-TO-HTML/images/package-bg1.jpg) no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding: 80px 0px;
+        }
+
+        .h2.psection-title {
+            font-size: 50px;
+            font-weight: 700;
+            color: #f64b3c;
+        }
+
+        .price-box {
+            background: #FFF;
+            padding: 40px;
+            max-width: 346px;
+            border: 2px;
+            margin: 0px auto;
+            color: #f64b3c;
+        }
+
+        .price-box h3 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .col-md-4 {
+            flex: 0 0 auto;
+            width: 33.33333333%;
+        }
+
+        .price-box h4 {
+            font-weight: 700;
+        }
+
+        .price-box p {
+            color: #f64b3c;
+            font-size: 15px;
+            line-height: 22px;
+            margin-top: 20px;
+        }
+
+        .price-box {
+            background: #FFF;
+            padding: 40px;
+            max-width: 346px;
+            border: 2px;
+            margin: 0px auto;
+            color: #f64b3c;
+
+        }
+
+        /*testimonial Section*/
+
+        section.testimonial-section {
+            background: url(../PSD-TO-HTML/images/testimonila-bg.jpg) no-repeat;
+            background-size: cover;
+            padding: 100px 0px;
+            text-align: center;
+            color: #FFF;
+        }
+
+        section.testimonial-section h2 {
+            color: #FFF;
+        }
+
+        .review-box p {
+            font-size: 27px;
+        }
+
+        .review-box {
+            max-width: 900px;
+            margin: 0px auto;
+        }
+
+        .review-box h3 {
+            padding: 22px;
+            font-size: calc(1.3rem + .6vw)
+        }
+
+        /*Newsletter*/
+
+        section.newsletter-section {
+            padding: 100px 0px;
+            background: url(../PSD-TO-HTML/images/newsletter-bg.jpg) no-repeat;
+            background-size: cover;
+        }
+
+        .justify-content-center {
+            justify-content: center !important;
+        }
+
+        .form-col {
+            max-width: 600px;
+            margin: 0px auto;
+        }
+
+        .form-col .form-group {
+            width: 100%;
+        }
+
+        .form-col button.btn.btn-primary {
+            position: absolute;
+            top: 0;
+            right: -18px;
+        }
+
+        .form-control {
+            height: 50px;
+            border-radius: 50px;
+            padding-right: 186px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-left {
+            width: 362px;
+            border: 2px solid #FFF;
+            border-radius: 40px 0px 0px 40px;
+            height: 50px;
+            font-size: 15px;
+        }
+
+        .flex-right {
+            width: 234px;
+            background: #f64b3c;
+            color: white;
+            border: 2px solid #f64b3c;
+            border-radius: 0px 20px 20px 0px;
+            height: 50px;
+            font-size: 20px;
+
+        }
+
+        /*Footer*/
+
+        footer {
+            background: #222222;
+            padding: 100px 0px;
+            color: #FFF;
+        }
+
+        footer ul li a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        footer ul li {
+            list-style: none;
+        }
+
+        .social ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .social ul li {
+            display: inline-block;
+        }
+
+        footer ul {
+            padding: 0;
+        }
+
+        .footer-col p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .col-md-3 {
+            flex: 0 0 auto;
+            width: 25%
+        }
+
+        .col-md-2 {
+            flex: 0 0 auto;
+            width: 16.66666667%;
+        }
+
+        .footer-col h3 {
+            font-size: calc(1.3rem + .6vw);
+            padding-bottom: 15px;
+        }
+
+        .social ul li a {
+            width: 35px;
+            height: 35px;
+            background: #FFF;
+            display: inline-block;
+            color: #000;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 50%;
+        }
+
+        .row {
+            --bs-gutter-x: 1.5rem;
+        }
+
+        ul li a:hover {
+            color: rgb(33, 105, 161);
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Start Header	-->
+    <header class="header">
+        <div class="">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#"><img src="../PSD-TO-HTML/images/Logo1.png"></a>
+                </div>
+                <div id="mainDiv" class="main_list">
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Promo</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+            </nav>
+        </div>
+        </div>
+    </header>
+    <!-- End Header	-->
+    <!-- Start banner Section	-->
+    <section class="banner-section">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-text">
+                        <h1>Get Cashback<br>up to 50%</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur justo eu
+                            nunc consequat.</p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End banner Section	-->
+    <section class="chef-section ">
+        <div class="container">
+
+            <div class="intro-mein">
+                <h2 class="section-title">Our Chef</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                    vestibulum. </p>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="chef-media">
+                <img src="../PSD-TO-HTML/images/chef1.png" alt="" srcset="" />
+                <div class="chef-info">
+                    <h3>Fannie Stewart</h3>
+                    <h4>Co-Founder</h4>
+                </div>
+            </div>
+            <div class="chef-media">
+                <img src="../PSD-TO-HTML/images/chef2.png" alt="" srcset="" />
+                <div class="chef-info">
+                    <h3>Aiden Hunter</h3>
+                    <h4>Founder</h4>
+                </div>
+            </div>
+            <div class="chef-media">
+                <img src="../PSD-TO-HTML/images/chef3.png" alt="" srcset="" />
+                <div class="chef-info">
+                    <h3>Fannie Stewart</h3>
+                    <h4>Co-Founder</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--End Chef Section-->
+    <!--Start Shop Section	-->
+    <section class="shop-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="shop-img">
+                        <img src="../PSD-TO-HTML/images/burger-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="shop-text">
+                        <h2>Best Burger</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit. Vivamus lacinia odio vitae
+                            vestibulum vestibulum. </p>
+                        <a href="" class="btn btn-white">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Shop Section	-->
+    <!--Start Order Section-->
+    <section class="order-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="order-text">
+                        <h2 class="color-primary">Big Burger</h2>
+                        <p class="color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                            lacinia odio vitae vestibulum vestibulum. </p>
+                        <a href="" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="order-img">
+                        <img src="../PSD-TO-HTML/images/burger-img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Order Section	-->
+    <!--Start Stats Section	-->
+    <section class="stats-section ">
+        <div class="container">
+
+            <div class="intro-mein">
+                <h2 class="section-title">Statistics</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                    vestibulum.</p>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="chef-media">
+                <div class="stats-box ">
+                    <h3>7k</h3>
+                    <h4>Customer</h4>
+                </div>
+            </div>
+            <div class="chef-media">
+                <div class="stats-box ">
+                    <h3>109</h3>
+                    <h4>Outlets</h4>
+                </div>
+            </div>
+            <div class="chef-media">
+                <div class="stats-box ">
+                    <h3>35</h3>
+                    <h4>Country</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--End Stats Section	-->
+
+    <!-- Start Pricing section	-->
+    <section class="pricing-section ">
+        <div class="container">
+
+            <div class="intro-mein">
+                <h2 class="section-title">Popular Package</h2>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="chef-media">
+                <div class="price-box ">
+                    <h3>Package I</h3>
+                    <img src="../PSD-TO-HTML/images/package-img.png" alt="">
+                    <h4>$10.00</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <a href="" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+            <div class="chef-media">
+                <div class="price-box ">
+                    <h3>Package II</h3>
+                    <img src="../PSD-TO-HTML/images/package-img.png" alt="">
+                    <h4>$20.00</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <a href="" class="btn btn-primary">Order Now</a>
+
+                </div>
+            </div>
+            <div class="chef-media">
+                <div class="price-box ">
+                    <h3>Package III</h3>
+                    <img src="../PSD-TO-HTML/images/package-img.png" alt="">
+                    <h4>$30.00</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <a href="" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End Pricing section	-->
+
+    <!--Start Testimonial Section	-->
+    <section class="testimonial-section ">
+        <div class="container">
+
+            <div class="intro-mein">
+                <h2 class="section-title">Testimonial</h2>
+            </div>
+            <div class="review-box">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum
+                    vestibulum.</p>
+                <h3>Barry Henderson </h3>
+            </div>
+        </div>
+    </section>
+    <!--End Testimonial Section	-->
+
+    <!--Start Newsletter Section	-->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-12">
+                    <div class="intro-main text-center">
+                        <h2 class="section-title">Don’t miss Our Update</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                            vestibulum vestibulum. </p>
+                    </div>
+
+                    <div class="flex-container">
+                        <div class="">
+                            <input type="email" placeholder="Your Email" class="flex-left">
+                        </div>
+                        <div class="">
+                            <button type="" class="flex-right">SUBSCRIBE</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--End Newsletter Section	-->
+    <!--Start Footer	-->
+    <footer>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h3>Title Here</h3>
+                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.<br>Aliquam at dignissim nunc,
+                            id<br> maximus ex. Etiam nec <br>dignissim elit, at dignissim <br>enim. </p>
+                        <div class="social">
+                            <ul>
+                                <li> <a href=""><i class="fa fa-facebook"></i> </a> </li>
+                                <li> <a href=""><i class="fa fa-instagram"></i> </a> </li>
+                                <li> <a href=""><i class="fa fa-twitter"></i> </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="footer-col">
+                        <h3>About</h3>
+                        <ul>
+                            <li> <a href="">History</a> </li>
+                            <li> <a href="">Our Team</a> </li>
+                            <li> <a href="">Brand Guidelines</a> </li>
+                            <li> <a href="">Terms & Condition</a> </li>
+                            <li> <a href="">Privacy Policy</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="footer-col">
+                        <h3>Services</h3>
+                        <ul>
+                            <li> <a href="">How to Order</a> </li>
+                            <li> <a href="">Our Product</a> </li>
+                            <li> <a href="">Order Status</a> </li>
+                            <li> <a href="">Promo</a> </li>
+                            <li> <a href="">Payment Method</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="footer-col">
+                        <h3>Other</h3>
+                        <ul>
+                            <li> <a href="">Contact Us</a> </li>
+                            <li> <a href="">Help</a> </li>
+                            <li> <a href="">Privacy</a> </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </footer>
+    <!--Start Footer	-->
+</body>
+
+</html>
