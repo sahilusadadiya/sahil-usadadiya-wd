@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post">
+        <table>
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" class="thisrequired" name="username" id="username" required></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" class="thisrequired" name="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td>confirm password</td>
+                <td><input type="text" class="thisrequired" name="cpassword" id="cpassword" required></td>
+            </tr>
+            <tr>
+                <td>new field</td>
+                <td><input type="text" name="nfield" id="nfield" required></td>
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="text" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td>mobile</td>
+                <td><input type="text" class="thisrequired" name="mobile" id="mobile" required pattern="[0-9]+"
+                        minlength="10" maxlength="10" title="please enter number only"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        let reqFields = document.getElementsByClassName("thisrequired")
+        // console.log(reqFields);
+        for (let index = 0; index < reqFields.length; index++) {
+            // console.log( reqFields[index]);
+            reqFields[index].addEventListener("blur", (event) => {
+                // console.log(event);
+                var txt = document.createElement("SPAN");
+                txt.innerHTML = "Whatever text you want to write . . .";
+                if (reqFields[index].value == "") {
+                    if (reqFields[index].nextSibling == null) {
+                        reqFields[index].parentNode.appendChild(txt);
+                    }
+                } else {
+                    if (reqFields[index].nextSibling != null) {
+                        if (reqFields[index].nextSibling.nodeName == "SPAN") {
+                            reqFields[index].nextSibling.remove()
+                        }
+                    }
+                }
+            });
+        }
+
+
+    </script>
+
+</body>
+
+</html>
