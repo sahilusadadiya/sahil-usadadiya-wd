@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider-item img {
+
+            width: 400px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .animate-slider {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: slider-animation 2s;
+        }
+
+        @keyframes slider-animation {
+            from {
+                transform: rotate(0deg) scale(0);
+            }
+
+            to {
+                transform: rotate(360deg) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider-wrapper">
+        <div class="slider-item"><img class="slider-img" src="../Slider/earth-crystal.webp" alt=""></div>
+        <div class="slider-item"><img class="slider-img" src="../Slider/istockphoto.jpg" alt=""></div>
+        <div class="slider-item"><img class="slider-img"
+                src="../Slider/large-beautiful-drops-transparent-rain-260nw-668593321.webp" alt=""></div>
+        <div class="slider-item"><img class="slider-img" src="../Slider/nature-3082832__340.jpg" alt=""></div>
+        <div class="slider-item"><img class="slider-img" src="../Slider/Soothing-nature-backgrounds-2-1024x684.jpg"
+                alt=""></div>
+    </div>
+
+    <script>
+        let SliderItems = document.getElementsByClassName("slider-item");
+        let counter = 0
+        function Slider() {
+            console.log("Slider called");
+            // console.log(SliderItems);
+            for (var index = 0; index < SliderItems.length; index++) {
+                // const element = SliderItems[index];
+                // console.log(SliderItems[index]);
+                SliderItems[index].style.display = "none"
+                SliderItems[index].classList.remove("animate-slider")
+            }
+            if (counter >= SliderItems.length) {
+                counter = 0
+            }
+            SliderItems[counter].style.display = "block"
+            SliderItems[counter].classList.add("animate-slider")
+            // setTimeout(() => {
+            //     console.log("setTimeout");
+            // }, 3000);
+            counter++
+            setTimeout(Slider, 3000);
+            // setInterval(Slider, 5000);
+        }
+        Slider() 
+    </script>
+</body>
+
+</html>
