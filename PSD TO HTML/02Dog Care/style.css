@@ -193,7 +193,7 @@ img {
     right: 211px;
 
     z-index: 10;
-    top: 840px;
+    top: 820px;
     width: auto;
 
 }
@@ -517,7 +517,7 @@ h4 {
 /* section-6 */
 #sec-six {
     height: 961px;
-    background-color: #739ee3;
+    background-color: #5380c1;
 }
 
 .sec-six-text {
@@ -541,7 +541,7 @@ h4 {
     margin-left: 238px;
 }
 
-.jus {
+.just {
     justify-content: center;
 }
 
