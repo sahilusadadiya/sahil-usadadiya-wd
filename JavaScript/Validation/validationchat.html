@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <span id="name-error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="email-error"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span id="password-error"></span>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" required>
+        <span id="confirm-password-error"></span>
+
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" pattern="[0-9]*" required>
+        <span id="mobile-number-error"></span>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <script>
+        function validateRequiredFields() {
+            let isValid = true;
+
+            const requiredFields = document.querySelectorAll('input[required]');
+            requiredFields.forEach(field => {
+                if (field.value.trim() === '') {
+                    const fieldName = field.id.replace('-', ' ');
+                    const errorMessage = document.createElement('span');
+                    errorMessage.innerText = `${fieldName} is required.`;
+                    errorMessage.classList.add('error-message');
+                    field.parentElement.appendChild(errorMessage);
+                    isValid = false;
+                }
+            });
+
+            return isValid;
+        }
+
+        document.getElementById('registration-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const isValid = validateRequiredFields();
+            if (isValid) {
+                // Handle successful registration
+            }
+        });
+    </script>
+
+</body>
+
+</html>
