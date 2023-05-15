@@ -12,6 +12,9 @@
     display: flex;
 }
 
+.flex-direction-rr {
+    flex-direction: row-reverse;
+}
 
 
 .ml-a {
@@ -37,6 +40,30 @@
 .w-100 {
     width: 100%;
 }
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    flex: 1 0 0%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -86,4 +113,58 @@ nav ul li {
 
     background: url(image/top-bg.png)no-repeat 0px 0px /contain;
     height: 1000px;
+}
+
+.row {
+    display: flex;
+
+}
+
+
+.card-main-header {
+    margin: 155px 0;
+    padding: 150px 0px 150px 150px;
+    width: 50%;
+}
+
+.card-main-header h2 {
+    /* margin-left: 50px;
+    padding-left: 50px; */
+    /* padding-left: 0px; */
+    /* margin-left: 200px; */
+    /* font-size: 37px;
+    font-weight: 300;
+    line-height: 50px;
+    font-family: "Roboto Slab"; */
+    font-size: 37px;
+    letter-spacing: 1px;
+    line-height: 49px;
+    font-weight: 300;
+    font-family: "Roboto Slab";
+}
+
+.card-main-header p {
+    font-size: 34px;
+    letter-spacing: 1px;
+    line-height: 41px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    margin: 30px 0;
+    margin-right: 50px;
+}
+
+.btn {
+    border-radius: 21px;
+    padding: 7px 50px;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #b68e76;
+}
+
+.btn-secondary {
+    background-color: #3a3a3a;
+    /* color: white; */
 }
