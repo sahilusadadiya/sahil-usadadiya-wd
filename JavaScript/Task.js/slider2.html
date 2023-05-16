@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideranimation {
+            animation: slideranimation 4s linear;
+            position: relative;
+        }
+
+        @keyframes slideranimation {
+            from {
+                left: 1000px;
+            }
+
+            to {
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <img class="slider-img" src="../Slider/istockphoto.jpg" alt="">
+        <img class="slider-img" src="../Slider/earth-crystal.webp" alt="">
+        <img class="slider-img" src="../Slider/large-beautiful-drops-transparent-rain-260nw-668593321.webp" alt="">
+        <img class="slider-img" src="../Slider/nature-3082832__340.jpg" alt="">
+        <img class="slider-img" src="../Slider/Soothing-nature-backgrounds-2-1024x684.jpg" alt="">
+    </div>
+    <script>
+        let SliderImage = document.getElementsByClassName("slider-img");
+        let count = 0
+        console.log(SliderImage);
+        function Slider() {
+            for (let index = 0; index < SliderImage.length; index++) {
+                console.log(SliderImage);
+                console.log(SliderImage[index]);
+                SliderImage[index].style.display = "none"
+                SliderImage[index].classList.remove("slideranimation")
+            }
+            if (count >= SliderImage.length) {
+                count = 0
+            }
+            console.log("count", count);
+            console.log("element", SliderImage[count]);
+            console.log("element", SliderImage[count].classList);
+            SliderImage[count].style.display = "block"
+            SliderImage[count].classList.add("slideranimation")
+
+            count++;
+            setTimeout(Slider, 4000);
+        }
+        Slider();
+    </script>
+</body>
+
+</html>
