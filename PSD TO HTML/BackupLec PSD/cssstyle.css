@@ -68,7 +68,7 @@ a {
 
 
 
-
+/* header section start */
 h1 {
     color: #b68e76;
     font-family: 'Poppins', serif;
@@ -109,10 +109,13 @@ nav ul li {
     /* width: 2px; */
 }
 
+
+/* main top section start  */
+
 #main-top-section {
 
     background: url(image/top-bg.png)no-repeat 0px 0px /contain;
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .row {
@@ -167,4 +170,68 @@ nav ul li {
 .btn-secondary {
     background-color: #3a3a3a;
     /* color: white; */
+}
+
+
+/* section-2 */
+#sec-2 {
+    background: url(image/juice.png);
+    height: 880px;
+}
+
+.card-main {
+    margin: 120px 0;
+    padding: 100px 0px;
+    width: 50%;
+}
+
+.card-main h3 {
+    font-size: 39px;
+    letter-spacing: 0px;
+    line-height: 48px;
+    color: #000000;
+    font-weight: 700;
+}
+
+.card-main p {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 42px;
+    color: #000000;
+    font-weight: 250;
+    margin: 30px 0;
+}
+
+.card-main input {
+    width: 400px;
+    font-size: 15px;
+    letter-spacing: 0px;
+    line-height: 31px;
+    color: #000000;
+    font-weight: 700;
+    /* border-radius: ; */
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 23px;
+}
+
+
+
+.button {
+    border-radius: 21px;
+    padding: 7px 50px;
+    color: white;
+    margin-bottom: 30px 0;
+    background-color: #b68e76;
+    margin-bottom: 30px;
+}
+
+.card-main h4 {
+    width: 370px;
+    height: 71px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #30302f;
+    font-weight: 400;
+    margin: 30px 0;
 }
