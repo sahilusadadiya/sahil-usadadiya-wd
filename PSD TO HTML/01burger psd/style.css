@@ -11,7 +11,6 @@ img {
 
 .header {
     width: 100%;
-
     position: absolute;
     line-height: 65px;
     text-align: center;
@@ -201,7 +200,7 @@ section.shop-section {
 }
 
 .container {
-    width: 1200px;
+    /* width: 1200px; */
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -217,7 +216,7 @@ section.shop-section {
 
 .row {
     display: flex;
-    margin: 0 -15px;
+    margin: 0 0px;
 }
 
 h2 {
@@ -593,3 +592,5 @@ footer ul {
     line-height: 35px;
     border-radius: 50%;
 }
+
+@media (max-width:540px) {}
