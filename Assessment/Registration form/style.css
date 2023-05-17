@@ -47,7 +47,7 @@ form .from-group {
     width: calc(100% / 2 - 20px);
 }
 
-form span {
+form label {
     display: block;
     font-weight: 500;
     margin-bottom: 5px;
