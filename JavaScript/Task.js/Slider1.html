@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,20 @@
     <title>Image Slider</title>
 
     <style>
-        body{
+        body {
             margin: 0;
         }
-        .slide-container{
+
+        .slide-container {
             position: relative;
             width: 100%;
         }
+
         .slide img {
             width: 100%;
         }
-        .arrow{
+
+        .arrow {
             cursor: pointer;
             position: absolute;
             top: 45%;
@@ -29,13 +33,16 @@
             font-weight: bold;
             position: fixed;
         }
-        .next{
+
+        .next {
             right: 10px;
         }
-        .prev{
+
+        .prev {
             left: 10px;
         }
-        .caption{
+
+        .caption {
             color: white;
             font-size: 30px;
             font-weight: bold;
@@ -46,13 +53,15 @@
             background-color: rgba(0, 0, 0, 0.715);
             padding: 15px 0px;
         }
-        .slide{
+
+        .slide {
             display: none;
         }
     </style>
 </head>
+
 <body>
-    
+
 
     <div class="slide-container">
         <div class="slide">
@@ -73,7 +82,7 @@
         </div>
         <span class="arrow prev" onclick="controller(-1)"> &#10094; </span>
         <span class="arrow next" onclick="controller(1)"> &#10095;</span>
-        
+
     </div>
 
     <script>
@@ -81,25 +90,25 @@
         let flag = 0;
         slideshow(flag);
 
-        function controller(x){
+        function controller(x) {
             flag = flag + x;
             slideshow(flag);
-            
+
         }
 
-        function slideshow(num){
+        function slideshow(num) {
             let slides = document.getElementsByClassName('slide');
 
-            if(num ==  slides.length){
+            if (num == slides.length) {
                 flag = 0;
                 num = 0;
             }
-            if(num < 0){
-                flag = slides.length-1;
-                num = slides.length-1;
+            if (num < 0) {
+                flag = slides.length - 1;
+                num = slides.length - 1;
             }
 
-            for(let y of slides){
+            for (let y of slides) {
                 y.style.display = "none";
             }
             // console.log(slides);
@@ -107,4 +116,5 @@
         }
     </script>
 </body>
+
 </html>
