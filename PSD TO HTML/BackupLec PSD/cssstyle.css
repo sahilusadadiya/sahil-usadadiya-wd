@@ -114,7 +114,7 @@ nav ul li {
 
 #main-top-section {
 
-    background: url(image/top-bg.png)no-repeat 0px 0px /contain;
+    background: url(image/top-bg.png)no-repeat 0px 0px /cover;
     /* height: 1000px; */
 }
 
@@ -125,7 +125,7 @@ nav ul li {
 
 
 .card-main-header {
-    margin: 155px 0;
+    /* margin: 155px 0; */
     padding: 150px 0px 150px 150px;
     width: 50%;
 }
