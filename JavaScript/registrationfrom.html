@@ -12,111 +12,60 @@
 <body>
     <div class="container">
         <div class="title">Responsive Registration Form</div>
-        <form id="form-validation">
+        <form id="registrationForm">
             <div class="form-group">
-                <span>Name</span>
+                <label for="Name">Name;</label>
                 <input type="text" id="name" placeholder="Enter name" required>
-                <span id="nameError"></span>
+
             </div>
             <div class="form-group">
-                <span>Username</span>
+                <label for="Username">Username</label>
                 <input type="text" placeholder="Enter username" required>
-                <span id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" placeholder="Enter email" require>
 
             </div>
             <div class="form-group">
-                <span>Email</span>
-                <input type="text" id="email" placeholder="Enter email" required>
-                <span id="EmailError"></span>
+                <label for="mobile number">Phonenumber</label>
+                <input type="mobile number" id="phone-number" placeholder="Enter phone number" required>
+
 
             </div>
             <div class="form-group">
-                <span>Phone Number</span>
-                <input type="text" id="phone-number" placeholder="Enter phone number" required>
+                <label for="password">Password</label>
 
-                <span id="phoneError"></span>
+                <input type="password" id="password" placeholder="Enter password" required>
 
-            </div>
-            <div class="form-group">
-                <span>Password</span>
-                <input type="text" id="password" placeholder="Enter password" required>
-                <span id="passwordError"></span>
 
             </div>
             <div class="form-group">
-                <span>ConfirmPassword</span>
-                <input type="text" id="confirmpassword" placeholder="Enter Confirm password" id="name" required>
-                <span id="confirmpasswordError"></span>
+                <label for="confirmPassword">Confirm Password</label>
 
+                <input type="confirmPassword" id="confirmaPassword" placeholder="Enter Confirm password" required>
             </div>
             <div class="button">
-                <input type="button" value="Register">
+                <input type="submit" value="Register">
             </div>
         </form>
     </div>
 
     <script>
-        // Function to validate the form
-        function validateForm(event) {
-            event.preventDefault(); // Prevent form submission
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
 
-            // Reset error messages
-            clearErrorMessages();
-
-            // Validate name field
-            const nameInput = document.getElementById("name");
-            if (nameInput.value === "") {
-                displayErrorMessage("nameError", "Name is required");
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                event.preventDefault(); // Prevent form submission
             }
-            //  validated username fields
-            const usernameInput = document.getElementById("name");
-            if (nameInput.value === "") {
-                displayErrorMessage("nameError", "Name is required");
-            }
-            // Validate email field
-            const emailInput = document.getElementById("email");
-            if (emailInput.value === "") {
-                displayErrorMessage("emailError", "Email is required");
-            }
-
-            // Validate phone number field
-            const mobileInput = document.getElementById("phone-number");
-            const mobileValue = mobileInput.value;
-            if (mobileValue === "") {
-                displayErrorMessage("phoneError", "Mobile number is required");
-            } else if (!/^[0-9]+$/.test(mobileValue)) {
-                displayErrorMessage("phoneError", "Invalid mobile number");
-            }
-            // Validate password field
-            const PasswordInput = document.getElementById("password");
-            if (emailInput.value === "") {
-                displayErrorMessage("passwordError", "Email is required");
-            }
-            // Validate confirmpassword field
-            const ConfirmpasswordInput = document.getElementById("confirmpassword");
-            if (emailInput.value === "") {
-                displayErrorMessage("confirmpasswordError", "Email is required");
-            }
-        }
-
-        // Function to display error messages
-        function displayErrorMessage(elementId, message) {
-            const errorSpan = document.getElementById(elementId);
-            errorSpan.textContent = message;
-        }
-
-        // Function to clear error messages
-        function clearErrorMessages() {
-            const errorSpans = document.querySelectorAll("span[id$='Error']");
-            errorSpans.forEach((span) => {
-                span.textContent = "";
-            });
-        }
-
-        // Attach form submission event listener
-        const form = document.getElementById("form-validation");
-        form.addEventListener("register", validateForm);
+        });
     </script>
+
+
+
 </body>
 
 </html>

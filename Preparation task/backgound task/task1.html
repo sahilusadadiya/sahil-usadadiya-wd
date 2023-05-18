@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .bg-image {
+            background: url(images/task1BgImg.jpg);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin: 0 auto; */
+        }
+
+        .bg-image img {
+            width: 100%;
+
+        }
+
+        .blure {
+            /* margin: 0 auto; */
+            width: 400px;
+            height: 250px;
+            border-radius: 5px;
+            background-color: #ffffff59;
+            backdrop-filter: blur(13px);
+            border: 1px solid #ffffff57;
+            padding: 50px 0px;
+            text-align: center;
+        }
+
+        .blure>h1 {
+            font-size: 30px;
+            font-weight: 200;
+        }
+
+        .blure>p {
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        .blure>:nth-child(2) {
+            line-height: 40px;
+            font-size: 12px;
+        }
+
+        .drag>:nth-child(1) {
+            text-decoration: underline;
+        }
+
+        .dropdown {
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: 500 !important;
+            color: rgba(0, 0, 0, 0.446) !important;
+        }
+
+        .dropdown>:nth-child(1) {
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="bg-image">
+        <div class="blure">
+            <h1>Blurred Background</h1>
+            <p class="drag">By <span>Sahil Usadadiya</span></p>
+            <p>Drag this box to move around</p>
+            <p class="dropdown">SEE ALSO: <span>STAGED DROPDOWN ANIMATION</span></p>
+        </div>
+    </section>
+</body>
+
+</html>
