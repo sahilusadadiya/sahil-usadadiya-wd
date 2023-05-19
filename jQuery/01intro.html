@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h2>jQuery</h2>
+    <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and
+        manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a
+        multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that
+        millions of people write JavaScript.</p>
+
+    <p>$ is not defined => page not contains jQuery lib</p>
+    <ul>
+        <li>CDN => Content delivery network</li>
+    </ul>
+    <p id="banner-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione repudiandae nisi iure
+        commodi eum blanditiis similique repellendus quibusdam alias illo tempore corporis, fuga corrupti incidunt at
+        veniam minima fugiat facere?</p>
+    <div class="button-container" id="button-container">
+        <button>Click</button>
+    </div>
+
+    <!-- <script src="js/jquery-3.7.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        // document.querySelector("button").addEventListener("click", function () {
+        //     // console.log("called");
+        //     document.getElementById("banner-message").style.display = "none"
+        // })
+        var hiddenBox = $("#banner-message");
+        $("#button-container button").on("click", function (event) {
+            hiddenBox.hide();
+        });
+    </script>
+</body>
+
+</html>
