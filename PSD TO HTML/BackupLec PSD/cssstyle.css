@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #b68e76;
+}
 
 .d-flex {
     display: flex;
@@ -51,9 +54,8 @@
 .row {
     display: flex;
     width: 100%;
-    /* margin-right: -15px; */
-    border-radius: 0px 0px 0px 0px;
-    /* margin-left: -15px; */
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 .col {
@@ -82,8 +84,9 @@ h1 {
     width: 1180px;
     background-color: #3a3a3a;
     margin: 0 auto;
-    border-radius: 0% 0% 15% 15%;
+    border-radius: 0px 0px 80px 80px;
     box-shadow: 0 90px 50px -70px gray;
+    padding: 50px 20px 20px;
 }
 
 nav ul li a {
@@ -543,15 +546,14 @@ nav ul li {
 
 
 
+
+
 .text h3 {
     font-size: 38px;
     line-height: 46px;
     color: #000000;
     font-weight: 150;
     margin-bottom: 40px;
-
-
-
 }
 
 .text a {
