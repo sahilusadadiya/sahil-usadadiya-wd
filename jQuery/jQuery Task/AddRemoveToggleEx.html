@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        .first {
+            background: tan;
+        }
+
+        .second {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Jquery class method</h1>
+
+    <div id="box">
+        <h2>Test box</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus et id accusantium quo, perferendis
+            quis, nemo quos nisi, doloribus quod. Officia quidem perferendis obcaecati dolores nemo explicabo atque
+            odio.D</p>
+    </div>
+    <br>
+    <button id="addbutton">Add Class</button>
+    <button id="removebutton">Remove Class</button>
+    <button id="togglebutton">Toggle Class</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+
+
+    <script>
+        $('#addbutton').click(function () {
+            $('#box,h1').addClass("first second");
+        });
+
+        $('#removebutton').click(function () {
+            $('#box').removeClass("second");
+        });
+
+        $('#togglebutton').click(function () {
+            $('#box').toggleClass("second");
+        });
+    </script>
+</body>
+
+</html>
