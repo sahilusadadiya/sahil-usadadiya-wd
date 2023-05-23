@@ -10,20 +10,19 @@
         div {
             width: 60px;
             padding: 10px;
-            height: 70px;
+            height: 50px;
             float: left;
             margin: 5px;
-            background: yellow;
+            background: yellowgreen;
             cursor: pointer;
         }
 
         .mod {
-            background: blueviolet;
+            background: brown;
             cursor: default;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
 </head>
 
 <body>
@@ -34,13 +33,12 @@
     <div>5</div>
 
     <script>
-        var modHeight = 70;
+        var modWidth = 80;
         $("div").one("click", function () {
-            $(this).innerHeight(modHeight).addClass("mod");
-            modHeight -= 10;
+            $(this).innerWidth(modWidth).addClass("mod");
+            modWidth -= 12;
         });
     </script>
-
 </body>
 
 </html>
