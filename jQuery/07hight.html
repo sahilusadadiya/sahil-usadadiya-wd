@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>height demo</title>
+    <style>
+        div {
+            width: 50px;
+            height: 70px;
+            float: left;
+            margin: 5px;
+            background: rgb(156, 117, 70);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>box 1</div>
+    <div>box 2</div>
+    <div>box 3</div>
+    <div>box 4</div>
+    <div>box 5</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+    <script>
+        $("div").one("click", function () {
+            // console.log($(this).height(110));
+            // console.log($( this ).height());
+            // $( this ).height(50);
+            $(this).height(50).css({ backgroundColor: "green", marginTop: "60px" });
+        });
+    </script>
+
+</body>
+
+</html>
