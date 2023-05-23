@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #b68e76;
+    /* background-color: #b68e76; */
 }
 
 .d-flex {
@@ -47,15 +47,15 @@ body {
 .container {
     width: 1180px;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
 }
 
 .row {
     display: flex;
     width: 100%;
-    margin-right: -15px;
-    margin-left: -15px;
+    /* margin-right: -15px; */
+    /* margin-left: -15px; */
 }
 
 .col {
@@ -119,8 +119,8 @@ nav ul li {
 
 #main-top-section {
 
-    background: url(image/top-bg.png)no-repeat 0px 0px /cover;
-    height: 1015px;
+    background: url(image/top-bg.png)no-repeat 0px 0px / cover;
+    /* height: 1015px; */
 }
 
 
@@ -271,8 +271,8 @@ nav ul li {
 
 /* section-3 */
 #sec-2 {
-    background: url(image/juice.png) no-repeat;
-    /* width: 100%; */
+    background: url(image/juice.png);
+    width: 100%;
     height: 880px;
 }
 
@@ -411,7 +411,7 @@ nav ul li {
 .section-5 {
     background: url(image/juiceimg.png);
     height: 920px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .text-left {
@@ -524,6 +524,34 @@ nav ul li {
 }
 
 
+/* smoothie secction  */
+.favourite-seasonal {
+    padding: 50px 50px 0px 130px;
+}
+
+.shadow-box {
+    box-shadow: 10px 12px 25px rgb(69, 68, 68);
+    height: 350px;
+    width: 10px;
+    position: absolute;
+    right: 5px;
+    top: 90px;
+}
+
+.z-index-min-1 {
+    z-index: -1;
+}
+
+.my-1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.position-reletive {
+    position: relative;
+}
+
+
 /* section-7 */
 
 .section7 {
@@ -582,6 +610,6 @@ nav ul li {
 
 .shape-1 {
     width: auto;
-    right: 400px;
+    right: 250px;
     top: 30px;
 }
