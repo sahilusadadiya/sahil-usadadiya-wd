@@ -557,6 +557,7 @@ nav ul li {
 .section7 {
     background-color: #dab099;
     padding: 80px;
+    z-index: -1;
 }
 
 .text h2 {
