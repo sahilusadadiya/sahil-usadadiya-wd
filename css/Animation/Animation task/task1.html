@@ -63,6 +63,14 @@
 
     }
 
+    .rotate3d {
+      transition: transform 1s;
+    }
+
+    .rotate3d:hover {
+      transform: rotate3d(1, 2, 3, 10deg);
+    }
+
     .rotateY {
       transform: perspective(1) scaleZ(1) rotateY(0deg);
       transition: transform 0.5s ease;
@@ -82,6 +90,17 @@
 
     .box:hover .rotateX {
       transform: perspective(500px) scaleZ(2) rotateX(45deg);
+
+    }
+
+    .rotateZ {
+      transform: perspective(1) scaleZ(1) rotateZ(0deg);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover .rotateZ {
+      transform: perspective(500px) scaleZ(2) rotateZ(45deg);
+
 
     }
 
@@ -146,6 +165,15 @@
       transform: scale(1.5, 1.5);
     }
 
+    .scale3d {
+      transform: scale(1);
+      transition: transform 0.5s;
+    }
+
+    .scale3d:hover {
+      transform: scale3d(0.5, 2, 1);
+    }
+
     .scaleX {
       transform: scaleX(1);
       transition: transform 0.5s ease;
@@ -165,6 +193,7 @@
     .box:hover .scaleY {
       transform: scaleY(2);
     }
+
 
 
 
@@ -197,6 +226,16 @@
       transform: skewY(30deg);
 
     }
+
+    .perspective {
+      transition: 3s;
+
+    }
+
+    .box:hover .perspective {
+      transform: perspective(250px) rotatey(50deg);
+
+    }
   </style>
 </head>
 
@@ -206,81 +245,63 @@
       <div class="blue matrix"> matrix</div>
     </div>
     <div class="box">
-      <div class="blue matrix3d">
-        matrix3d
-      </div>
+      <div class="blue matrix3d"> matrix3d</div>
     </div>
     <div class="box">
-      <div class="blue rotate">
-        rotate
-      </div>
+      <div class="blue rotate"> rotate</div>
     </div>
     <div class="box">
-      <div class="blue rotateY">
-        rotateY
-      </div>
+      <div class="blue rotate3d">rotate3d</div>
     </div>
     <div class="box">
-      <div class="blue rotateX">
-        rotateX
-      </div>
+      <div class="blue rotateY"> rotateY</div>
     </div>
     <div class="box">
-      <div class="blue translate">
-        translate
-      </div>
+      <div class="blue rotateX"> rotateX</div>
     </div>
     <div class="box">
-      <div class="blue translateX">
-        translateX
-      </div>
+      <div class="blue rotateZ"> rotateZ</div>
     </div>
     <div class="box">
-      <div class="blue translateY">
-        translateY
-      </div>
+      <div class="blue translate">translate</div>
     </div>
     <div class="box">
-      <div class="blue translate3d">
-        translate3d
-      </div>
+      <div class="blue translateX">translateX</div>
     </div>
     <div class="box">
-      <div class="blue translateZ">
-        translateZ
-      </div>
+      <div class="blue translateY"> translateY</div>
     </div>
     <div class="box">
-      <div class="blue scale">
-        scale
-      </div>
+      <div class="blue translate3d">translate3d</div>
     </div>
     <div class="box">
-      <div class="blue scaleX ">
-        scaleX
-      </div>
+      <div class="blue translateZ">translatez</div>
     </div>
     <div class="box">
-      <div class="blue scaleY">
-        scaleY
-      </div>
+      <div class="blue scale">scale</div>
     </div>
     <div class="box">
-      <div class="blue skew">
-        skew
-      </div>
+      <div class="blue scale3d">scale3d</div>
     </div>
     <div class="box">
-      <div class="blue skewX">
-        skewX
-      </div>
+      <div class="blue scaleX ">scaleX</div>
     </div>
     <div class="box">
-      <div class="blue skewY">
-        skewY
-      </div>
+      <div class="blue scaleY">scaleY</div>
+    </div>
+    <div class="box">
+      <div class="blue skew">skew</div>
+    </div>
+    <div class="box">
+      <div class="blue skewX"> skewX</div>
+    </div>
+    <div class="box">
+      <div class="blue skewY">skewY</div>
     </div>
 
+    <div class="box">
+      <div class="blue perspective">perspective</div>
+    </div>
   </div>
 
 </body>
