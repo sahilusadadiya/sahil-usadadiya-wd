@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Hello</p>
+    how are
+    <p>you?</p>
+    <!-- <button onclick="funcclick">Attach/detach paragraphs</button> -->
+    <button>Attach/detach paragraphs</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        // Event Handler START
+        // function funcclick() {}
+        // Event Handler END
+
+        // EventListener START
+        document.getElementsByTagName('button')[0].addEventListener("click", function () { })
+        // EventListener END
+
+
+        $("button").click(function () {
+            $("p").detach();
+            // $("p").empty();
+        })
+    </script>
+</body>
+
+</html>
