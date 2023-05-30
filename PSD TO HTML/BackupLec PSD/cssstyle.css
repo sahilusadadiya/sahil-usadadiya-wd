@@ -60,12 +60,37 @@ body {
 
 .col {
     flex: 1 0 0%;
-    padding-right: 15px;
-    padding-left: 15px;
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
 }
 
 a {
     text-decoration: none;
+}
+
+.pl-25 {
+    padding-left: 25px;
+}
+
+.pl-100 {
+    padding-left: 100px;
+}
+
+.pr-100 {
+    padding-right: 100px;
+}
+
+.ml-100 {
+    margin-left: 100px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.my-1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 
@@ -374,21 +399,21 @@ nav ul li {
     font-size: 25px;
     color: #ffffff;
     font-weight: 250;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .col_50 h5 {
     font-size: 25px;
     color: #ffffff;
     font-weight: 250;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .col_50 h6 {
     font-size: 25px;
     color: #ffffff;
     font-weight: 250;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .col_50 P {
@@ -551,6 +576,83 @@ nav ul li {
     position: relative;
 }
 
+#favorite-seasonal-smoothie .row1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#favorite-seasonal-smoothie .row {
+    margin: 0;
+}
+
+
+.col1 {
+    padding: 30px;
+    margin-left: 65px;
+    display: flex;
+    flex-grow: 0.3;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#favorite-seasonal-smoothie ul {
+    list-style: none;
+}
+
+#favorite-seasonal-smoothie ul li:before {
+    content: "+";
+    padding-right: 5px;
+}
+
+
+.btn-minus {
+    background-color: #b68e76;
+    width: 10px;
+    border-radius: 20px 0px 0px 20px;
+    padding: 7px 10px;
+    margin: 0px 10px;
+}
+
+.btn-plus {
+    background-color: #b68e76;
+    width: 10px;
+    border-radius: 0px 20px 20px 0px;
+    padding: 7px 10px;
+    margin: 0px 10px;
+}
+
+#favorite-seasonal-smoothie h6 {
+    font-size: 15px;
+    color: #30302f;
+    font-weight: 600;
+    font-family: "Roboto Slab";
+    width: 55%;
+}
+
+#favorite-seasonal-smoothie h5 {
+    font-size: 52px;
+    font-weight: 100;
+    font-family: "Roboto Slab";
+}
+
+.add-order {
+    /* margin: auto; */
+
+}
+
+.row1>a {
+    color: #30302f;
+
+}
+
+.add-order a {
+    font-size: 11px;
+    color: #30302f;
+    font-weight: 500;
+    font-family: "Roboto Slab";
+}
+
 
 /* section-7 */
 
@@ -619,6 +721,11 @@ nav ul li {
 /* footer  */
 footer .social-icon-menu::after {
     display: none;
+}
+
+.footer {
+    background-color: #f1e8e3;
+    padding: 80px 0px 0px 0px;
 }
 
 footer .container {
@@ -708,24 +815,4 @@ footer ul li a {
     color: #000000;
     font-weight: 700;
     font-family: "Roboto Slab";
-}
-
-.pl-25 {
-    padding-left: 25px;
-}
-
-.pl-100 {
-    padding-left: 100px;
-}
-
-.pr-100 {
-    padding-right: 100px;
-}
-
-.ml-100 {
-    margin-left: 100px;
-}
-
-.mr-100 {
-    margin-right: 100px;
 }
