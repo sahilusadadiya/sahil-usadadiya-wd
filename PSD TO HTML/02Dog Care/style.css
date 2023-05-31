@@ -644,7 +644,7 @@ h4 {
     font-weight: 700;
 }
 
-.cart-3 p {
+.cart-3 b {
     color: #ffffff;
     font-size: 22px;
     font-weight: 400;
@@ -688,6 +688,7 @@ h4 {
 .footer {
     height: 435px;
     background-color: #343434;
+    padding: 50px;
 }
 
 .f-text p {
