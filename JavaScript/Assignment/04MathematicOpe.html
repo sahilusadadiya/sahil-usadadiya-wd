@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+
+    <h1>Maths Operation</h1>
+    <table>
+
+        <tr>
+            <td><label for="num1">Enter 1st Number</label></td>
+            <td><input type="text" name="numb1" id="num1"></td>
+        </tr>
+        <tr>
+            <td><label for="num2">Enter 2nd Number</label></td>
+            <td><input type="text" name="numb2" id="num2"></td>
+        </tr>
+        <tr>
+            <td><label for="answer">Answer is :</label></td>
+            <td id="answer"></td>
+        </tr>
+
+
+
+    </table>
+    <div>
+        <span><button id="addition" onclick="mathsOprt()">+</button></span>
+        <span><button id="sub" onclick="mathsOprt()">-</button></span>
+        <span><button id="multiply" onclick="mathsOprt()">*</button></span>
+        <span><button id="divide" onclick="mathsOprt()">/</button></span>
+        <span><button id="modulus" onclick="mathsOprt()">%</button></span>
+    </div>
+
+    <script>
+
+
+        function mathsOprt() {
+            // let data1 = +(document.getElementById("num1").value)
+            // let data2 = +(document.getElementById("num2").value)
+
+            let data1 = parseInt(document.getElementById("num1").value)
+            let data2 = parseInt(document.getElementById("num2").value)
+            // let ans = document.getElementById("answer")
+
+
+            let addit = document.getElementById("addititon")
+            let subst = document.getElementById("sub")
+
+
+            // For addition---------------------------------------------------------------------
+
+            if (event.target.id === "addition") {
+                let sum = data1 + data2
+                console.log(sum);
+                document.getElementById("answer").innerHTML = sum
+            }
+            //for substraction------------------------------------------------------------------
+
+            else if (event.target.id === "sub") {
+                let sub = data1 - data2
+                document.getElementById("answer").innerHTML = sub
+
+            }
+            //for multiplication---------------------------------------------------------------
+
+            else if (event.target.id === "multiply") {
+                let multi = data1 * data2
+                document.getElementById("answer").innerHTML = multi
+
+            }
+            //Division------------------------------------------------------------------------
+
+            else if (event.target.id === "divide") {
+                let div = data1 / data2
+                document.getElementById("answer").innerHTML = div
+
+            }
+            //Modulus------------------------------------------------------------------------
+
+            else if (event.target.id === "modulus") {
+                let modul = data1 % data2
+                document.getElementById("answer").innerHTML = modul
+
+            }
+        }
+    </script>
+</body>
+
+</html>
