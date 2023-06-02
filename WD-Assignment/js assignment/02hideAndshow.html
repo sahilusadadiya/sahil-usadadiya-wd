@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td><label for="password-id">password</label></td>
+            <td><input type="password" name="password-id" id="password"></td>
+            <td><input type="checkbox" name="check" id="checkbox"></td>
+        </tr>
+    </table>
+
+
+    <script>
+        let chkbx = document.getElementById("checkbox")
+        let pass = document.getElementById("password")
+        // console.log(pass.value);
+
+        chkbx.addEventListener("click", function () {
+            // console.log("called");
+
+            if (chkbx.checked) {
+                pass.type = "text"
+            } else {
+                pass.type = "password"
+            }
+        })
+    </script>
+
+</body>
+
+</html>
