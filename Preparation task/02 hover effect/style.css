@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    /* background-color: green; */
+    height: 100vh;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+}
+
+div[class*=card] {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.square {
+    background-color: rgb(155, 19, 229);
+    color: white;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px 40px;
+    font-size: 30px;
+    bottom: -38px;
+}
+
+.card1 {
+    background-color: rgb(155, 19, 229);
+    position: absolute;
+    transform: rotate(-10deg) translate(-10%, 0%);
+}
+
+.card1:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translate(-30%, -10%) rotate(-10deg);
+
+}
+
+.card2 {
+    background-color: rgb(255, 192, 240);
+    position: absolute;
+    transform: rotate(10deg)translate(20%, 0%);
+}
+
+.card2:hover {
+
+    transition: all 0.5s ease-in-out;
+    transform: translate(30%, -10%) rotate(10deg);
+
+}
+
+.card3 {
+    position: absolute;
+    transform: rotate(0deg);
+    background-color: teal;
+
+}
+
+.card3:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translate(0%, -10%) rotate(0deg);
+}
+
+*/
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    overflow: hidden;
+}
+
+div[class*=card] {
+    height: 300px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu {
+    background-color: rgb(155, 19, 229);
+    color: white;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 20px 40px;
+    font-size: xx-large;
+    bottom: -38px;
+}
+
+.card1 {
+    background-color: rgb(155, 19, 229);
+    position: absolute;
+    transform: rotate(-10deg) translate(-10%, 0%);
+
+
+}
+
+.card1:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translate(-30%, -10%) rotate(-10deg);
+
+}
+
+.card2 {
+    background-color: rgb(255, 192, 240);
+    position: absolute;
+    transform: rotate(10deg)translate(20%, 0%);
+
+
+
+}
+
+.card2:hover {
+
+    transition: all 0.5s ease-in-out;
+    transform: translate(30%, -10%) rotate(10deg);
+
+}
+
+.card3 {
+    position: absolute;
+    transform: rotate(0deg);
+    background-color: white;
+
+}
+
+.card3:hover {
+    transition: all 0.5s ease-in-out;
+    transform: translate(0%, -10%) rotate(0deg);
+} */
