@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 pseudo Element </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header li {
+            display: inline-block;
+            font-size: 100px;
+            margin: 30px;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #000;
+            color: white;
+        }
+
+        .css {
+            position: relative;
+            padding: 0 20px;
+        }
+
+
+        .css::before {
+            content: ' ';
+            border-right: 10px solid teal;
+            position: absolute;
+            height: 100px;
+            top: 11px;
+            right: 250px;
+        }
+
+        .css::after {
+            content: ' ';
+            border-left: 10px solid teal;
+            position: absolute;
+            height: 100px;
+            top: 11px;
+            left: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <li>HTML</li>
+        <li class="css">CSS</li>
+        <li>JS</li>
+    </header>
+</body>
+
+</html>
