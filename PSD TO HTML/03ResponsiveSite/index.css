@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    /* border: 1px solid; */
+    /* border: 2px solid green; */
 
 }
 
@@ -323,6 +323,7 @@ p {
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+
 }
 
 .footer h4 {
