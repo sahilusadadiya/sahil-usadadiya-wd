@@ -5,6 +5,12 @@
     /* border: 1px solid; */
 }
 
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 img {
     max-width: 100%;
 }
@@ -199,11 +205,6 @@ section.shop-section {
     margin: 0 auto;
 }
 
-.container {
-    width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
 .align-items-center {
     align-items: center;
