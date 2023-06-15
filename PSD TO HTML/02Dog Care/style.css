@@ -654,7 +654,8 @@ h4 {
 
 .cart-3 p {
     font-size: 20px;
-    width: ;
+    width: 340px;
+    height: ;
 }
 
 .cart-3 b {
@@ -662,6 +663,19 @@ h4 {
     font-size: 22px;
     font-weight: 400;
     width: 45%;
+}
+
+.shape {
+
+    right: -15px;
+    top: 150px;
+}
+
+.shaperight {
+    right: -100px;
+    /* height: 70%/; */
+    width: 25%;
+    top: 610px;
 }
 
 /* .col-45 {
