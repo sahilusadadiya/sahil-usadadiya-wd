@@ -5,6 +5,14 @@
     /* border: 1px solid; */
 }
 
+.posi-rel {
+    position: relative;
+}
+
+.posi-ab {
+    position: absolute;
+}
+
 .section {
     /* height: 1000px; */
     background-color: #fcc302;
@@ -160,6 +168,13 @@
     font-weight: 700;
 }
 
+.shape-1 {
+    left: 710px;
+    z-index: -1;
+    top: 280px;
+
+}
+
 .left p {
     width: 100%;
     font-size: 25px;
@@ -213,6 +228,12 @@
 
 .allcart img {
     width: 100%;
+}
+
+.shape-2 {
+    left: 380px;
+    top: 320px;
+    z-index: -1;
 }
 
 .sec4-left h1 {
