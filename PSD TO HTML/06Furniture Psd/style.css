@@ -291,8 +291,10 @@ nav .content .links li {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
     align-items: center;
+    text-align: center;
     gap: 0.90rem;
     margin-top: 30px;
+    /* justify-content: space-around; */
 }
 
 .offer-content .row {
