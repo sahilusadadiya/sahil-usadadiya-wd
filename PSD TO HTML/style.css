@@ -632,3 +632,18 @@ image {
     padding: 15px px;
     align-content: center;
 }
+
+/* section-12 */
+.section-12 .card {
+    width: 100%;
+}
+
+.section-12 .card img {
+    width: 100%;
+}
+
+.section-12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
