@@ -81,7 +81,7 @@ div[class*=article] {
 
 
 
-@media (max-width: 575.98px) {
+@media (max-width: 575px) {
 
     .container {
         grid-template-columns: repeat(4, 0.1fr);
