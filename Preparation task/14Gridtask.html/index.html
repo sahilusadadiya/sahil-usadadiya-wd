@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./img/triquetra_256px.png" />
+    <!-- Google Fonts - Noto Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --color-almost-black: #222222;
+            --color-white: #ffffff;
+            --color-wheat: wheat;
+            --color-clear: rgb(249, 249, 249);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*  https://uigradients.com/#Html */
+        body {
+            background: #00c9ff;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #acb6e5, #00c9ff);
+            background: -moz-linear-gradient(to right, #acb6e5, #00c9ff);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #acb6e5, #00c9ff);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: var(--color-white);
+            font-family: "Noto Sans", sans-serif;
+            min-height: 100vh;
+        }
+
+        /*
+    ~  Para  muchas cajas / div  dentro  de  un  contenedor  usamos  GRID  ~
+*/
+        .container-main {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 1fr 3fr;
+            /* Cuantas  fracciones  para  cada  caja */
+            margin: 20px auto;
+            max-width: 1500px;
+            padding: 40px auto;
+            width: 90%;
+        }
+
+        /*
+    ~  Para  muchos elementos  dentro  de  una  caja / div  usamos  FLEX  ~ 
+        Flex  solo  se  alinean  los  elementos  en  row.
+*/
+        .banner {
+            background-position: center center;
+            background-size: cover;
+            border: 2px solid var(--color-clear);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Se  estira  verticalmente  segun  contenido */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner ul {
+            list-style: none;
+        }
+
+        .banner ul li {
+            font-weight: bolder;
+            padding-bottom: 1rem;
+        }
+
+        .banner .button {
+            background: cornflowerblue;
+            border: 3px solid var(--color-almost-black);
+            border-radius: 100px;
+            color: var(--color-white);
+            cursor: pointer;
+            display: block;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+            width: 100%;
+        }
+
+        .banner .button:hover {
+            transform: scale(1.03);
+        }
+
+        .container-cards {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            /*  = 1fr 1fr 1fr */
+        }
+
+        .card {
+            background-position: center center;
+            background-size: cover;
+            border-radius: 8px;
+            min-height: 210px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        /*
+    ~  Para  muchos elementos  dentro  de  una  caja / div  usamos  FLEX  ~ 
+*/
+        .card .texts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* se  alinean  elementos  verticalmente */
+            height: 100%;
+            /* ocupar  todo  el  alto  pero  justificado  izquierdo */
+        }
+
+        .card .texts h3 {
+            text-align: center;
+        }
+
+        .card .texts h5 {
+            text-align: right;
+        }
+
+        hr {
+            background-color: var(--color-almost-black);
+            color: var(--color-almost-black);
+            height: 4px;
+            margin: 20px auto;
+            max-width: 1500px;
+            width: 90%;
+        }
+
+        /*
+    ~  Para  muchas cajas / div  dentro  de  un  contenedor  usamos  GRID  ~
+*/
+        .container-info {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 3fr 1fr;
+            /* Cuantas  fracciones  para  cada  caja / div */
+            margin: 20px auto;
+            max-width: 1500px;
+            padding: 40px auto;
+            width: 90%;
+        }
+
+        .container-info .presentation {
+            background-color: var(--color-white);
+            border: 2px solid var(--color-almost-black);
+            border-radius: 10px;
+            color: var(--color-almost-black);
+            padding: 16px 12px;
+            text-align: justify;
+        }
+
+        .container-info .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* or  center */
+        }
+
+        .container-info .form input {
+            border-radius: 8px;
+            margin-bottom: 14px;
+            padding: 6px;
+        }
+
+        .container-info .form textarea {
+            border-radius: 8px;
+            margin-bottom: 14px;
+            padding: 6px;
+            resize: none;
+        }
+
+        .container-info .form .button {
+            background: cornflowerblue;
+            border: 3px solid var(--color-almost-black);
+            border-radius: 10px;
+            color: var(--color-white);
+            cursor: pointer;
+            display: block;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+            width: 100%;
+        }
+
+        .container-images {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 20px auto;
+            max-width: 1500px;
+            padding: 40px auto;
+            width: 90%;
+        }
+
+        .container-images .card-image {
+            overflow: hidden;
+        }
+
+        .container-images img {
+            border: 2px solid var(--color-almost-black);
+            max-height: 170px;
+            transform: scale(1);
+            transition: 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .card-image img:hover {
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+
+        /* Media Queries */
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (max-width: 992px) {
+            .container-info .presentation {
+                font-size: 14px;
+            }
+
+            .container-images {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (max-width: 768px) {
+            .container-main {
+                grid-template-columns: 1fr;
+            }
+
+            .container-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .container-info {
+                grid-template-columns: 1fr;
+            }
+
+            .container-info .presentation {
+                font-size: 12px;
+            }
+
+            .container-images {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 600px) {
+            .container-main {
+                grid-template-columns: 1fr;
+            }
+
+            .container-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card .texts p {
+                white-space: pre-line;
+            }
+
+            .container-info {
+                grid-template-columns: 1fr;
+            }
+
+            .container-info .presentation {
+                font-size: 11px;
+            }
+
+            .container-images {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 400px and up) */
+        @media only screen and (max-width: 400px) {
+
+            .card .texts p {
+                white-space: pre-line;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-main">
+        <div class="banner"
+            style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/banner.jpg')">
+            <h3>¡Sígueme en YouTube!</h3>
+            <ul>
+                <li>JavaScript</li>
+                <li>Python 3</li>
+                <li>Django</li>
+                <li>Node.js</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>PHP</li>
+            </ul>
+            <button class="button">Ir al canal</button>
+        </div>
+        <div class="container-cards">
+            <div class="card"
+                style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/videolists/Sel.jpg')">
+                <div class="texts">
+                    <h3>Python 3</h3>
+                    <p>Curso de Python para principiantes, desde cero y paso a paso.</p>
+                    <h5>01/10/2023</h5>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/videolists/2.jpg')">
+                <div class="texts">
+                    <h3>Django</h3>
+                    <p>Curso del framework web Django, para Python, desde cero y detallado.</p>
+                    <h5>03/10/2023</h5>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/videolists/3.jpg')">
+                <div class="texts">
+                    <h3>Java</h3>
+                    <p>Curso del lenguaje de programación Java, para principiantes.</p>
+                    <h5>07/10/2023</h5>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/videolists/Royal_Blue.jpg')">
+                <div class="texts">
+                    <h3>JavaScript</h3>
+                    <p>Curso de JavaScript, incluyendo las últimas novedades de ECMAScript.</p>
+                    <h5>09/10/2023</h5>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/videolists/5.jpg')">
+                <div class="texts">
+                    <h3>Bootstrap</h3>
+                    <p>Curso del popular framework CSS, creado por Twitter.</p>
+                    <h5>11/10/2023</h5>
+                </div>
+            </div>
+            <div class="card"
+                style="background-image: url('https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/videolists/6.jpg')">
+                <div class="texts">
+                    <h3>C#</h3>
+                    <p>Curso del lenguaje de programación impulsado por Microsoft: C#.</p>
+                    <h5>16/10/2023</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="container-info">
+        <div class="presentation">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur temporibus consectetur deleniti cum
+            quisquam, ea fuga quis. Consectetur itaque delectus, asperiores, beatae dignissimos perspiciatis
+            nobis fugit aspernatur vitae praesentium qui corrupti maxime? Ratione vel, asperiores, dolorum eos atque
+            maiores sunt delectus quidem iure dignissimos ipsum blanditiis quia voluptatem officiis ea
+            excepturi vitae amet libero doloremque. Voluptatum porro quasi, aliquid tenetur minima neque saepe nam modi,
+            inventore non ullam deserunt a voluptatibus dignissimos eum officiis optio! Numquam
+            necessitatibus, dolorem inventore repellat pariatur iusto velit facilis vitae, error voluptates sed delectus
+            neque dignissimos tempora ex? Mollitia eum, cupiditate molestiae minus non quidem?
+            <br> <br>
+            <a href="https://youtu.be/QSrxMVmG6js" target="_blank">~ Thanks @UskoKruM2010 ~</a>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Email" />
+            <textarea rows="3" placeholder="Question"></textarea>
+            <button class="button">Send</button>
+        </div>
+    </div>
+    <hr />
+    <div class="container-images">
+        <div class="card-image">
+            <img src="https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/thumbnails/python.jpg"
+                alt="Thumbnail 1" />
+        </div>
+        <div class="card-image">
+            <img src="https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/thumbnails/django.jpg"
+                alt="Thumbnail 2" />
+        </div>
+        <div class="card-image">
+            <img src="https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/thumbnails/github.jpg"
+                alt="Thumbnail 3" />
+        </div>
+        <div class="card-image">
+            <img src="https://raw.githubusercontent.com/Gimena-Riveros/CSS_Grid_or_FlexBox/main/img/thumbnails/flexbox-vs-css-grid.jpg"
+                alt="Thumbnail 4" />
+        </div>
+    </div>
+</body>
+
+</html>
