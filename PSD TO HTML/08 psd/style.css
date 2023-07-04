@@ -145,17 +145,13 @@
 .section-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 2px;
+    column-gap: 3px;
 
 }
 
 /* section-4 start   */
 .sec-4 {
     padding: 50px 0;
-}
-
-.column-gap {
-    /* column-gap: 20px; */
 }
 
 .space-between {
