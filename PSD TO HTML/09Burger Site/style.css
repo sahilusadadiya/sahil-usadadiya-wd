@@ -276,8 +276,6 @@
 
 /* burger */
 
-
-
 /* banner */
 .banner {
     margin-top: 100px;
@@ -380,13 +378,7 @@
 
 /* about */
 
-
-
-
-
-
-
-/* contact */
+/* * contact */
 #contact {
     margin-top: 10px;
     border: 2px solid #ffc800;
@@ -467,11 +459,6 @@
 }
 
 /* contact */
-
-
-
-
-
 
 /* footer */
 #footer {
@@ -582,10 +569,6 @@
 }
 
 /* footer */
-
-
-
-
 
 .arrow {
     position: fixed;
