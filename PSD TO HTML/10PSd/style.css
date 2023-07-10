@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.jsc {
+    justify-content: space-between;
+}
+
+/* navbar section  */
+.section-1 {
+    padding: 20px 0;
+    background-color: #1f262f;
+}
+
+.link ul li {
+    display: inline-block;
+    margin: 15px 20px;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-size: 20px;
+    align-items: center;
+}
