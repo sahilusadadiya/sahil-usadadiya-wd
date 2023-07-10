@@ -25,14 +25,19 @@
 
 .link ul li {
     display: inline-block;
-    margin: 15px 20px;
+    margin: 35px 30px;
     align-items: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 
 .link a {
     text-decoration: none;
     color: rgb(245, 245, 245);
-    font-size: 20px;
+    /* font-size: 20px; */
     align-items: center;
+
+}
+
+ul>li {
+    font-size: 20px;
 }
