@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS custom property */
+        @property --angle {
+            syntax: "<angle>";
+            inherits: false;
+            initial-value: 0deg;
+        }
+
+        @property --hue {
+            syntax: "<number>";
+            inherits: false;
+            initial-value: 0;
+        }
+
+        /* Conic Effect */
+        .conic-effect {
+            height: 80%;
+            width: 80%;
+            border-radius: 50%;
+            --color: hsl(31, 94%, 61%);
+            background: conic-gradient(var(--color) var(--angle),
+                    transparent calc(var(--angle)));
+            animation: conic-effect 2s ease-in-out infinite;
+        }
+
+        @keyframes conic-effect {
+            0% {
+                --angle: -1deg;
+            }
+
+            100% {
+                --angle: 360deg;
+            }
+        }
+
+        /* Conic Multicolor Effect */
+        .conic-multicolor-effect {
+            height: 80%;
+            width: 80%;
+            border-radius: 50%;
+            --color: hsl(var(--hue, 0), 94%, 61%);
+            background: conic-gradient(var(--color) var(--angle),
+                    transparent calc(var(--angle)));
+            animation: conic-multi-color-effect 2s ease-in-out alternate infinite;
+        }
+
+        @keyframes conic-multi-color-effect {
+            0% {
+                --angle: -1deg;
+                --hue: 31;
+            }
+
+            100% {
+                --angle: 360deg;
+                --hue: 211;
+            }
+        }
+
+        /* Body and Container Settings */
+        /* Center shapes */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* Set background color and light gray border */
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 5px solid lightgray;
+            background: black;
+            position: relative;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Conic Effect -->
+    <div class="container">
+        <div class="conic-effect"></div>
+    </div>
+
+    <!-- Conic Multicolor Effect -->
+    <div class="container">
+        <div class="conic-multicolor-effect"></div>
+    </div>
+</body>
+
+</html>
