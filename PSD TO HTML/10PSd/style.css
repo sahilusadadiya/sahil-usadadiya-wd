@@ -41,3 +41,10 @@
 ul>li {
     font-size: 20px;
 }
+
+/* .header section  */
+.section-1 {
+    background-image: url(images/bg.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
