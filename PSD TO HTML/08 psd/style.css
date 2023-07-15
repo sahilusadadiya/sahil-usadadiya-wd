@@ -97,8 +97,7 @@
 
 .img {
     width: 100%;
-    /* text-align: center; */
-    /* margin-bottom: 20px; */
+
 }
 
 .col-33 {
@@ -128,10 +127,7 @@
     margin-bottom: 40px;
 }
 
-.jus-con {
-    /* justify-content: space-around;
-    justify-content: space-between; */
-}
+
 
 /* section-3 */
 .section-3 .box {
