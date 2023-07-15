@@ -309,11 +309,10 @@
     width: 100%;
     margin: 0 auto;
     height: 118px;
-    /* font-size: 14px; */
     line-height: 23px;
     color: #ffffff;
     font-family: "Raleway";
-    /* text-align: center; */
+
 }
 
 .icon i {
