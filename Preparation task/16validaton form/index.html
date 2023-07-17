@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* CSS styles for the form */
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <div id="nameError" class="error"></div>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Your email">
+        <div id="emailError" class="error"></div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your message"></textarea>
+        <div id="messageError" class="error"></div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+
+            // Reset previous error messages
+            document.getElementById('nameError').textContent = '';
+            document.getElementById('emailError').textContent = '';
+            document.getElementById('messageError').textContent = '';
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            let isValid = true;
+
+            // Validate name
+            if (name === '') {
+                document.getElementById('nameError').textContent = 'Name is required';
+                isValid = false;
+            }
+
+            // Validate email
+            if (email === '') {
+                document.getElementById('emailError').textContent = 'Email is required';
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                document.getElementById('emailError').textContent = 'Invalid email format';
+                isValid = false;
+            }
+
+            // Validate message
+            if (message === '') {
+                document.getElementById('messageError').textContent = 'Message is required';
+                isValid = false;
+            }
+
+            // Submit the form if valid
+            if (isValid) {
+                // Perform any additional actions here, such as sending the form data to a server
+                alert('Form submitted successfully!');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
+            }
+        }
+
+        // Helper function to validate email format
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html>
