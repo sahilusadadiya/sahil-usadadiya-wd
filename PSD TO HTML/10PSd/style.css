@@ -46,6 +46,6 @@ ul>li {
 .section-1 {
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
-    min-height: 800px;
+    min-height: 700px;
     background-size: cover;
 }
