@@ -47,6 +47,7 @@ body {
     margin: auto;
     background-color: white;
     padding: 15px;
+    /* display: none; */
 }
 
 .navbar-brand {
