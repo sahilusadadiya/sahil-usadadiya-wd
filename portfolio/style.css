@@ -503,6 +503,8 @@ span {
     }
 }
 
+
+
 @media (max-width:450px) {
     html {
         font-size: 50%;
@@ -512,6 +514,8 @@ span {
         width: 100%;
     }
 }
+
+
 
 @media (max-width:365px) {
     .home-img img {
