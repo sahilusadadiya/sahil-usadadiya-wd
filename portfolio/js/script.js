@@ -53,7 +53,8 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
-// typed js 
+// typed js
+
 
 const typed = new Typed('.multiple-text', {
     strings: ['Web Designer',],
