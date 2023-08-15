@@ -414,14 +414,14 @@ span {
     }
 }
 
-@media (max-width:991) {
+@media (max-width: 991) {
     .header {
         padding: 2rem 3%;
 
     }
 
     section {
-        padding: 7rem;
+        padding: 7rem 3% 2rem;
     }
 
     .contact {
@@ -481,6 +481,15 @@ span {
     }
 
     .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
         width: 70vw;
         margin-top: 4rem;
     }
