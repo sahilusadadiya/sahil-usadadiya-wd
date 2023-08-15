@@ -5,7 +5,7 @@ let navbar = document.querySelector('.navbar');
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-}
+};
 
 // scroll section avtive link 
 let sections = document.querySelectorAll('section');
@@ -26,7 +26,6 @@ window.onscroll = () => {
         };
     });
     // sticky navbar 
-
     let header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.screenY > 100);
