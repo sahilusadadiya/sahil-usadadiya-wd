@@ -30,6 +30,7 @@ section {
     padding: 10rem 9% 2rem;
 }
 
+/* header section  */
 .header {
     position: fixed;
     top: 0;
@@ -74,6 +75,7 @@ section {
 
 }
 
+/* home section  */
 .home {
     display: flex;
     justify-content: center;
