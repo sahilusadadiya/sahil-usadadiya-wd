@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com');
+/* @import url('https://fonts.googleapis.com'); */
 
 
 * {
@@ -28,6 +28,7 @@ html {
     color: whitesmoke;
     padding: 20px;
     width: 100%;
+    /* position: fixed; */
 }
 
 .nav-links {
@@ -87,6 +88,10 @@ header {
     font-size: 7vmin;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
 }
 
 .ctn {
