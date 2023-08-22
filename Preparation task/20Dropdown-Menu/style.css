@@ -46,3 +46,53 @@ body {
 .menu-bar .fa {
     margin-right: 8px;
 }
+
+.sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    border-radius: 0;
+    text-align: left;
+    background: transparent;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
+    color: #beff00;
+}
+
+.fa-angle-right {
+    float: right;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.hover-me:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgba(0, 100, 0);
+}
