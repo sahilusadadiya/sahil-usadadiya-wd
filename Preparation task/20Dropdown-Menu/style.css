@@ -89,8 +89,8 @@ body {
 }
 
 .hover-me:hover .sub-menu-2 {
-    display: block;
     position: absolute;
+    display: block;
     margin-top: -40px;
     margin-left: 140px;
     background: rgba(0, 100, 0);
