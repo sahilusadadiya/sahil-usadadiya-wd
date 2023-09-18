@@ -17,6 +17,8 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* navbar  */
+
 .navbar {
     display: flex;
     align-items: center;
