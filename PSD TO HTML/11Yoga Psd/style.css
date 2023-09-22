@@ -78,8 +78,8 @@
 .cir-text::before {
     position: absolute;
     content: '';
-    top: 0;
     left: 0;
+    top: 0;
     right: 0;
     bottom: 0;
     outline: 2px solid #745a82;
