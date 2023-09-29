@@ -118,11 +118,8 @@ html::-webkit-scrollbar {
 
 /* Home Section End */
 
-
-
-
-
 /* Top Section Start */
+
 .top-section {
     padding: 10px 11% 100px;
 }
@@ -163,10 +160,8 @@ html::-webkit-scrollbar {
 
 /* Top Section End */
 
-
-
-
 /* Our Menu Strat */
+
 .menu {
     padding: 100px 11% 100px;
 }
@@ -303,6 +298,7 @@ html::-webkit-scrollbar {
 
 
 /* Contact Section Start */
+
 .contact {
     padding: 100px 11% 100px;
 }
@@ -324,11 +320,8 @@ html::-webkit-scrollbar {
 
 /* Contact Section End */
 
-
-
-
-
 /* Footer Start */
+
 #footer {
     padding: 15px 11% 15px;
 }
