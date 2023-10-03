@@ -42,7 +42,7 @@ nav ul li {
 }
 
 .menu-icon {
-    width: 28px;
+    width: 27px;
     margin-left: 20px;
     display: none;
 }
@@ -354,6 +354,7 @@ ul {
 }
 
 /* media query less than 600 screen size  */
+
 
 @media only screen and (max-width: 600px) {
     .row {
