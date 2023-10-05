@@ -85,6 +85,7 @@
 }
 
 /* section 2 css */
+
 .sec-2 {
     padding: 50px 0;
     text-align: center;
@@ -123,6 +124,7 @@
 }
 
 /* section-3 */
+
 .section-3 .box {
     width: 100%;
 }
@@ -139,6 +141,7 @@
 }
 
 /* section-4 start   */
+
 .sec-4 {
     padding: 50px 0;
 }
@@ -199,6 +202,7 @@
 }
 
 /* section-5  */
+
 .sec-5 {
     padding: 50px 0;
 }
@@ -242,6 +246,7 @@
 }
 
 /* SECTION -6 START  */
+
 .sec-6 {
     text-align: center;
     padding: 40px 0;
@@ -276,6 +281,7 @@
 }
 
 /* section-7 start */
+
 .sec-7 {
     text-align: center;
     background-color: #3a3e64;
@@ -328,6 +334,7 @@
 }
 
 /* footer start  */
+
 .footer {
     text-align: center;
     padding: 20px 0;
