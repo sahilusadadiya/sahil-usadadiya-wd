@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .suggestion {
+            margin-top: 40px;
+        }
+
+        .suggestion-emoji-image li {
+            display: inline-block;
+        }
+
+        .form-control {
+            border-radius: 20px;
+        }
+
+        .suggestion-box {
+            border-radius: 16px;
+            background: #FFF;
+            box-shadow: 0px 6px 12px 0px rgba(39, 97, 148, 0.70);
+            padding: 10px 15px;
+        }
+
+        .messagebtn button {
+            margin-top: 20px;
+            width: 180px;
+            height: 45px;
+            cursor: pointer;
+            border: none;
+            border-radius: 12px;
+            background: #46497E;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            color: #F6F7F8;
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: capitalize;
+        }
+
+        .suggestion-emoji {
+            margin-top: 20px;
+        }
+
+        .messagebtn button:hover {
+            background-color: rgb(67 0 86);
+            color: white;
+        }
+
+
+        .messagebtn {
+            text-align: right;
+
+        }
+
+        label {
+            color: #1A1E5F;
+
+            font-feature-settings: 'clig' off, 'liga' off;
+
+            font-family: Public Sans;
+            font-size: 20px;
+
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+
+        .suggestion-emoji-text {
+            margin-bottom: 10px;
+        }
+
+        .suggestion-form input {
+            margin-top: 10px;
+        }
+
+        .suggestion-message label {
+            margin-bottom: 15px;
+        }
+
+        .suggestion-form label span {
+            color: red;
+        }
+
+        .suggestion-title h1 {
+            color: #1A1E5F;
+            font-feature-settings: 'clig' off, 'liga' off;
+            font-family: Public Sans;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px;
+            text-align: center;
+            /* 62.5% */
+            text-transform: uppercase;
+        }
+
+        .suggestion-title p {
+            color: #717171;
+            text-align: center;
+            margin-top: 5px;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            /* 25.2px */
+        }
+
+        @media screen and (max-width:765px) {
+            .messagebtn {
+                text-align: center;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="suggestion">
+        <div class="container" id="contact">
+            <div class="suggestion-title">
+                <h1>SUGGESTIONS</h1>
+                <p>We're always looking for ways to improve. Please share your suggestions with us.</p>
+            </div>
+            <div class="suggestion-box">
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-6 py-3 py-md-0">
+                        <div class="suggestion-form">
+                            <label for="fname">Enter your name <span>*</span></label>
+
+                            <input type="text" class="form-control form-control" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 py-3 py-md-0">
+                        <div class="suggestion-form">
+                            <label for="fname">Enter your email</label>
+
+                            <input type="text" class="form-control form-control" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="suggestion-emoji">
+                        <div class="suggestion-emoji-text">
+                            <label>How was your experience? </label>
+                        </div>
+                        <div class="suggestion-emoji-image">
+                            <li><a href="#"><img src="./image/sad.png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/emojis (1).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/emojis (2).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/emojis (3).png" alt=""></a></li>
+                            <li><a href="#"><img src="./image/emojis.png" alt=""></a></li>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggestion-message" style="margin-top: 20px;">
+                    <label>Suggest anything we can improve... </label>
+
+                    <textarea class="form-control" id="" rows="3" placeholder=""></textarea>
+                </div>
+                <div class="messagebtn">
+                    <button>submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
