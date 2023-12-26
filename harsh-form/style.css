@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-1,
+.box-2 {
+    border: 1px solid;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    margin-bottom: 5px !important;
+}
+
+.address-text {
+    margin-left: 30px;
+}
+
+.form-section .address-text p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
+}
+
+.address-content .form-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+.address-content .p-2 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.border-left {
+    border-left: 1px solid #000;
+}
