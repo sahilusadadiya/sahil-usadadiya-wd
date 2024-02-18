@@ -1,154 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {
-            margin: 0;
+        * {
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 12px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myUL {
+            list-style-type: none;
             padding: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
+            margin: 0;
         }
 
-        #container {
-            display: flex;
-            height: 100vh;
+        #myUL li a {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+            /* Prevent double borders */
+            background-color: #f6f6f6;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block
         }
 
-        #scrolling-section {
-            flex: 1;
-            overflow-y: auto;
-            padding: 20px;
-            background-color: #f0f0f0;
-        }
-
-        #fixed-section {
-            /* flex: 1;
-            background-color: #ccc;
-            color: #333;
-            padding: 20px;
-            box-sizing: border-box; */
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
         }
     </style>
 </head>
 
 <body>
-    <div id="container">
-        <div id="scrolling-section">
-            <!-- Content that will scroll on the left side -->
-            <h2>Scrolling Section</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <!-- Add more content as needed -->
-        </div>
-        <div id="fixed-section">
-            <!-- Content that will stay fixed on the right side -->
-            <h2>Fixed Section</h2>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <p>This content will stay fixed while the left side scrolls.</p>
-            <!-- Add more content as needed -->
-        </div>
-    </div>
 
+    <h2>My Phonebook</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <ul id="myUL">
+        <li><a href="#">Adele</a></li>
+        <li><a href="#">Agnes</a></li>
+
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+    </ul>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
 </body>
 
 </html>
