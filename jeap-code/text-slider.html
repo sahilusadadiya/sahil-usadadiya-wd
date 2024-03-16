@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+        body {
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        marquee:before,
+        marquee:after {
+            position: absolute;
+            top: 0;
+            width: 10rem;
+            height: 100%;
+            content: "";
+            /*   z-index: -1; */
+
+        }
+
+        /* marquee:before {
+            left: 0;
+            width: 20px;
+            background: linear-gradient(to right, #FFEBEE -100%, transparent 100%);
+        } */
+
+        /* marquee:after {
+            right: 0;
+            width: 20px;
+            background: linear-gradient(to left, #FFEBEE -100%, transparent 100%);
+        } */
+        marquee {
+            background-color: #e6e6e6;
+            color: red;
+            font-size: 15px;
+            font-weight: 500;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <marquee behavior="" direction="left">*Note :-1) We are not processing applications for "CANADA" students. 2) We
+            are also not processing the "Foreign Undergraduate" Students. 3) Foreign Applications are processed for the
+            admission year 2024. 4) Domestic Applications are processed for the admission year 2023-24. 5) Medical
+            Undergrade Deemed/Pvt or Foreign are not considered.
+        </marquee>
+    </main>
+</body>
+
+</html>
