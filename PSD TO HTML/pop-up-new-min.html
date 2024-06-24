@@ -72,7 +72,7 @@
         <a class="showSingle" target="1">Div 1</a>
         <a class="showSingle" target="2">Div 2</a>
         <a class="showSingle" target="3">Div 3</a>
-        <a class="showSingle" target="4">Div 4</a>
+        <!-- <a class="showSingle" target="4">Div 4</a> -->
     </div>
 
     <section class="cnt">
@@ -80,7 +80,7 @@
 
             <div style="display: flex; gap: 20px;">
                 <p>sahil patel</p>
-                <p>sahil patel</p>
+                <p>jay patel</p>
                 <p>sahil patel</p>
                 <p>sahil patel</p>
             </div>
@@ -89,7 +89,7 @@
         <div id="div3" class="targetDiv">Content 3</div>
         <div id="div4" class="targetDiv">Content 4</div>
     </section>
-
+    <!-- 
     <script>
         jQuery(document).ready(function () {
             $(".targetDiv").hide();
@@ -108,6 +108,32 @@
                 jQuery('.targetDiv').hide('.cnt');
                 jQuery('#div' + $(this).attr('target')).slideToggle();
 
+            });
+        });
+
+
+
+
+    </script> -->
+
+
+    <script>
+        jQuery(document).ready(function () {
+            $(".targetDiv").hide();
+
+            jQuery('.showSingle').click(function () {
+                var target = $(this).attr('target');
+                var $targetDiv = $('#div' + target);
+
+                // Check if the targetDiv is currently visible
+                if ($targetDiv.is(':visible')) {
+                    // If visible, hide it (toggle)
+                    $targetDiv.slideUp();
+                } else {
+                    // Otherwise, hide all targetDivs and show the selected one
+                    $('.targetDiv').slideUp();
+                    $targetDiv.slideDown();
+                }
             });
         });
     </script>
