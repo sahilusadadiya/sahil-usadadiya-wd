@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .slider-img{
+        .slider-img {
             width: 400px;
             display: block;
             margin: 0 auto;
-            text-align: center; 
+            text-align: center;
 
         }
-        .slider-effect{
+
+        .slider-effect {
             animation: slidereffect 2s;
         }
+
         @keyframes slidereffect {
-            0%{ transform: rotate(10deg) scale(0); }
-            100% {transform: rotate(360deg) scale(1);}
+            0% {
+                transform: rotate(10deg) scale(0);
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+            }
         }
     </style>
 </head>
+
 <body>
 
-        <img class="slider-img" src="../Slider/earth-crystal.webp" alt="">
+    <img class="slider-img" src="../Slider/earth-crystal.webp" alt="">
 
-        <img class="slider-img" src="../Slider/istockphoto.jpg" alt="">
+    <img class="slider-img" src="../Slider/istockphoto.jpg" alt="">
 
-        <img class="slider-img" src="../Slider/large-beautiful-drops-transparent-rain-260nw-668593321.webp" alt="">
+    <img class="slider-img" src="../Slider/large-beautiful-drops-transparent-rain-260nw-668593321.webp" alt="">
 
-        <img class="slider-img" src="../Slider/nature-3082832__340.jpg" alt="">
+    <img class="slider-img" src="../Slider/nature-3082832__340.jpg" alt="">
 
-        <img class="slider-img" src="../Slider/Soothing-nature-backgrounds-2-1024x684.jpg" alt="">
+    <img class="slider-img" src="../Slider/Soothing-nature-backgrounds-2-1024x684.jpg" alt="">
 
-        <script>
-            SliderImgs = document.getElementsByClassName("slider-img");
-            console.log(SliderImgs);
-            counter = 0;
-            function Sldier(params) {
-                // console.log(counter);
-                for (let index = 0; index < SliderImgs.length;index++) {
+    <script>
+        SliderImgs = document.getElementsByClassName("slider-img");
+        console.log(SliderImgs);
+        counter = 0;
+        function Sldier(params) {
+            // console.log(counter);
+            for (let index = 0; index < SliderImgs.length; index++) {
                 // const element = SliderImgs[index];
                 // console.log(SliderImgs[index]);
-                SliderImgs[index].style.display="none"
+                SliderImgs[index].style.display = "none"
                 SliderImgs[index].classList.remove("slider-effect")
-                }
-                if (counter>=SliderImgs.length){
-                    counter = 0
-                }
-                SliderImgs[counter].style.display="block"
-                SliderImgs[counter].classList.add("slider-effect")
-                // setInterval(Sldier,3000) 
-                counter++
-                setTimeout(Sldier,3000) 
+            }
+            if (counter >= SliderImgs.length) {
+                counter = 0
+            }
+            SliderImgs[counter].style.display = "block"
+            SliderImgs[counter].classList.add("slider-effect")
+            // setInterval(Sldier,3000) 
+            counter++
+            setTimeout(Sldier, 3000)
 
-                
-           } 
-            Sldier()
-        </script>
-    
+
+        }
+        Sldier()
+    </script>
+
 </body>
+
 </html>
