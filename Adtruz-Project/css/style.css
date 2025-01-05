@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;500;600;700&display=swap');
+
+
+
+/* --------general-css-start------------- */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+/* ----------general-css-end------------- */
