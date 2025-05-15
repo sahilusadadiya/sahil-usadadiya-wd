@@ -15,6 +15,10 @@ p {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .section-bg {
     background-color: #EDE8D0;
     padding-top: 40px;
@@ -48,8 +52,100 @@ p {
 
 .header-section>div {
     position: relative;
-    z-index: 1;
 }
+
+@media (max-width: 768px) {
+    .header-section>div {
+        /* position: static !important; */
+        /* z-index: 1; */
+    }
+
+    .header-section::before {
+        display: none;
+    }
+}
+
+
+
+/* Reset */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Mobile header */
+.mobile-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.mobile-logo {
+    height: 40px;
+}
+
+/* Toggle button */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile menu (side drawer) */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.mobile-menu.active {
+    left: 0;
+}
+
+.mobile-menu-header {
+    margin-bottom: 20px;
+}
+
+.mobile-menu-logo {
+    height: 40px;
+}
+
+#menuClose {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Desktop styles only */
+@media (min-width: 768px) {
+
+    .mobile-header,
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.mobile-menu ul a {
+    color: #654638 !important;
+}
+
+
+
+
 
 /* hero-seciton-cssss------------ */
 .hero-section img {
@@ -81,6 +177,29 @@ p {
     font-size: 20px;
     border-radius: 10px;
     margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .hero-section img {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        color: #654638;
+        margin-top: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: capitalize;
+
+    }
+
+    .hero-text p {
+        margin-top: 15px;
+    }
+
+    .hero-text button {
+        margin-top: 15px;
+    }
 }
 
 
@@ -152,26 +271,39 @@ p {
     /* Adjust based on your design */
 }
 
+@media (max-width: 768px) {
+    .image-box {
+        flex: 0 0 100%;
+    }
+
+    .slider-title p {
+        color: #654638;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
+
 
 /* feature-product-css */
 .product-images img {
     width: 100%;
 }
 
-.heature-product-text h2 {
+.feature-product-text h2 {
     color: #1E1E1E;
     font-size: 35px;
     font-weight: 500
 }
 
-.heature-product-text p {
+.feature-product-text p {
     color: #1E1E1E;
     opacity: 50%;
     font-size: 20px;
     font-weight: 400;
 }
 
-.heature-product-text button {
+.feature-product-text button {
     color: #EDE8D0;
     font-family: 'Poppins', sans-serif;
     border: none;
@@ -183,7 +315,7 @@ p {
     margin-top: 30px;
 }
 
-.heature-product-text button i {
+.feature-product-text button i {
     color: #EDE8D0;
     margin-left: 5px;
 }
@@ -201,6 +333,14 @@ p {
     opacity: 50%;
     font-weight: 500;
     font-size: 18x;
+}
+
+@media (max-width:768px) {
+    .feature-product-text h2 {
+        color: #1E1E1E;
+        font-size: 25px;
+        font-weight: 500
+    }
 }
 
 
@@ -223,6 +363,19 @@ p {
     color: #654638;
     font-size: 22px;
     font-weight: 500;
+}
+
+@media (max-width:768px) {
+    .journey-title h3 {
+        color: #654638;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .row-gap {
+        row-gap: 20px;
+    }
 }
 
 
@@ -324,6 +477,19 @@ p {
     font-weight: 500;
 }
 
+@media (max-width:768px) {
+    .text-box {
+        left: 50%;
+        width: 270px;
+    }
+
+    .who-asd-text h3 {
+        color: #914800;
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+
 
 
 
@@ -387,10 +553,15 @@ p {
 }
 
 @media (max-width: 768px) {
+    .footer-section {
+        background-color: #654638;
+        padding: 30px 0px;
+    }
+
     .pages-list ul {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        gap: 5px;
     }
 
     .footer-images img {
@@ -444,4 +615,8 @@ p {
     padding-bottom: 20px;
     color: #654638;
     font-size: 30px;
+}
+
+.banner-images img {
+    width: 100%;
 }

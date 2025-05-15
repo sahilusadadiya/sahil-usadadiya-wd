@@ -18,50 +18,71 @@
 
 <body>
 
-    <!-- <header>
-
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Link 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Link 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0)">Link 3</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn-primary" type="button">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header> -->
 
     <div class="header-section pb-5">
-        <div class="">
-            <div class="header-logo text-center">
-                <img src="./images/header-logo.png" alt="">
+        <div class="header-sections pb-4">
+            <!-- Mobile Header -->
+            <div class="mobile-header d-flex justify-content-between align-items-center px-3 py-2 d-md-none">
+                <a href="./index.html"><img src="./images/header-logo.png" alt="Logo" class="mobile-logo"></a>
+                <button class="menu-toggle" id="menuToggle">&#9776;</button>
             </div>
-            <div class="nav-list mt-3">
+
+            <!-- Desktop Logo -->
+            <div class="header-logo text-center d-none d-md-block">
+                <a href="./index.html"><img src="./images/header-logo.png" alt=""></a>
+            </div>
+
+            <!-- Desktop Nav List -->
+            <div class="nav-list mt-3 d-none d-md-block">
                 <ul class="d-flex justify-content-center gap-4">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Products</li>
-                    <li>Contact</li>
-                    <li>Testimonials</li>
-                    <li>Terms & Policies</li>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
+                    <a>
+                        <li>About</li>
+                    </a>
+                    <a>
+                        <li>Products</li>
+                    </a>
+                    <a>
+                        <li>Contact</li>
+                    </a>
+                    <a>
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="./terms&condition.html">
+                        <li>Terms & Policies</li>
+                    </a>
                 </ul>
             </div>
+        </div>
+
+        <!-- Mobile Side Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header d-flex justify-content-between align-items-center">
+                <a href="./index.html"><img src="./images/header-logo.png" alt="Logo" class="mobile-menu-logo">
+                    <button id="menuClose">&times;</button>
+            </div>
+            <ul class="mobile-menu-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a>
+                    <li>About</li>
+                </a>
+                <a>
+                    <li>Products</li>
+                </a>
+                <a>
+                    <li>Contact</li>
+                </a>
+                <a>
+                    <li>Testimonials</li>
+                </a>
+                <a href="./terms&condition.html">
+                    <li>Terms & Policies</li>
+                </a>
+            </ul>
         </div>
 
         <div class="container mt-5">
@@ -156,10 +177,10 @@
     <section class="feature-product-section mt-5 mb-5">
 
         <div class="container">
-            <div class="row">
+            <div class="row row-gap">
                 <div class="col-lg-4 d-flex align-items-center">
-                    <div class="heature-product-text" style="width: 300px;">
-                        <h2>Featured <br>Products</h2>
+                    <div class="feature-product-text" style="width: 300px;">
+                        <h2>Featured Products</h2>
                         <p>Explore our most popular handcrafted items, loved by our customers for their quality and
                             design.</p>
                         <a href=""><button>See more <span><i class="fa-solid fa-arrow-right"></i></span></button></a>
@@ -282,7 +303,7 @@
             <h3>Follw Our Journey</h3>
         </div>
         <div class="container mt-4">
-            <div class="row">
+            <div class="row row-gap">
                 <div class="col-lg-3">
                     <div class="journey-image">
                         <img src="./images/jou-1.png" alt="">
@@ -328,7 +349,9 @@
             </div>
             <div class="pages-list">
                 <ul>
-                    <li>Home</li>
+                    <a href="./index.html">
+                        <li>Home</li>
+                    </a>
                     <li>About Us</li>
                     <li>Products</li>
                     <li>Testimonials</li>
@@ -353,6 +376,19 @@
 
     <!-- Bootstrap JS Bundle -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuClose = document.getElementById('menuClose');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>
