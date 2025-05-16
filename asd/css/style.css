@@ -620,3 +620,268 @@ li {
 .banner-images img {
     width: 100%;
 }
+
+
+
+
+
+
+/* about-pages-csss--------------- */
+
+/* our-story-section-css------------- */
+
+.our-story-section {
+    background-color: #EDE8D0;
+    margin: 60px 0px;
+    padding: 40px 0px;
+}
+
+
+.our-story-title h2 {
+    color: #5C4033;
+    font-weight: 600;
+    font-size: 50px;
+    /* border-bottom: 2px solid #000; */
+}
+
+.our-story-title .highlight {
+    border-bottom: 3px solid #964B00;
+    padding-bottom: 5px;
+}
+
+.our-story-other-text h3 {
+    color: #5C4033;
+    font-size: 35px;
+    margin-top: 35px;
+}
+
+.our-story-other-text p {
+    color: #964B00;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+@media (max-width:768px) {
+    .our-story-section {
+        margin: 30px 0px;
+        padding: 20px 0px;
+    }
+
+    .our-story-title h2 {
+        font-size: 25px;
+        padding: 0px 10px;
+    }
+
+    .our-story-other-text h3 {
+        font-size: 25px;
+        margin-top: 20px;
+        padding: 0px 10px;
+    }
+
+    .our-story-other-text p {
+        font-size: 18px;
+        margin-top: 15px;
+        padding: 0px 10px;
+
+    }
+
+}
+
+
+
+/* craftshipman-sectiton-css----------- */
+.craftshipman-sectiton {
+    padding-bottom: 40px;
+}
+
+.craftshipman-title h3 {
+    color: #654638;
+    font-weight: 600;
+    font-size: 55px;
+}
+
+.craftshipman-details p {
+    color: #964B00;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.craftshipman-card {
+    background-color: #EDE8D0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.9s ease;
+    cursor: pointer;
+}
+
+.card-text h4 {
+    color: #5C4033;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.card-text p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #964B00;
+}
+
+.craftshipman-card:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width:768px) {
+    .craftshipman-title h3 {
+        font-size: 25px;
+        padding: 0px 10px;
+    }
+
+    .craftshipman-details p {
+        color: #964B00;
+        font-size: 18px;
+        margin-top: 15px;
+        padding: 0px 10px;
+    }
+}
+
+
+
+/* materil-section-css--------- */
+.material-section {
+    background: #EDE8D0;
+    padding: 60px 0px;
+}
+
+.material-title h2 {
+    color: #5C4033;
+    font-weight: 600;
+    font-size: 50px;
+    /* border-bottom: 2px solid #000; */
+}
+
+.material-title .highlight {
+    border-bottom: 3px solid #964B00;
+    padding-bottom: 5px;
+}
+
+.material-title p {
+    color: #964B00;
+    font-size: 18px;
+    margin-top: 25px;
+}
+
+.material-text h3 {
+    color: #5C4033;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.material-text p {
+    color: #964B00;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .material-title h2 {
+        font-size: 25px;
+        padding: 0px 10px;
+    }
+
+    .material-text p {
+        padding: 0px 10px;
+    }
+
+    .material-text p {
+        margin-top: 10px;
+    }
+
+    .material-section {
+        background: #EDE8D0;
+        padding: 40px 0px;
+    }
+
+    .material-text h3 {
+        font-size: 25px;
+        padding: 0px 10px;
+    }
+
+    .material-title p {
+        padding: 0px 10px;
+    }
+
+    .material-row-reverse {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+}
+
+
+/* experiaence-section-css---------- */
+.experience-seciton {
+    margin: 60px 0px;
+}
+
+.experience-card {
+    background-color: #5C4033;
+    border-radius: 10px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.experience-card-details h4 {
+    color: #EDE8D0;
+    font-size: 28px;
+}
+
+.experience-card-details p {
+    color: #EDE8D0;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+
+.experience-card-details button {
+    border: none;
+    color: #5C4033;
+    background-color: #EDE8D0;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 15px 25px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+@media (max-width:768px) {
+    .experience-seciton {
+        margin: 30px 0px;
+    }
+
+    .experience-card {
+        padding: 30px 0px;
+    }
+
+    .experience-card-details h4 {
+        color: #EDE8D0;
+        font-size: 23px;
+    }
+
+    .experience-card-details p {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .experience-card-details button {
+        margin-top: 20px;
+        padding: 13px 20px;
+        font-size: 16px;
+    }
+}
