@@ -786,6 +786,12 @@ li {
     margin-top: 25px;
 }
 
+.material-image img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
 
 @media (max-width: 768px) {
     .material-title h2 {
@@ -818,6 +824,12 @@ li {
     .material-row-reverse {
         flex-direction: column-reverse;
         margin-top: 30px;
+    }
+
+    .material-image img {
+        height: auto;
+        object-fit: contain;
+        border-radius: 3px;
     }
 
 }
