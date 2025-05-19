@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-link.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="container">
+            <img src="./images/BH Logo 1.png" alt="">
+            <!-- <h1 class="logo">ADVENTURE</h1> -->
+            <ul class="nav-links">
+                <li class="active"><a href="#"></a>Home</li>
+                <li><a href="#"></a>About us</li>
+                <li><a href="#"></a>Service Page</li>
+                <li><a href="#"></a>Contact us</li>
+                <!-- <li class="ctn"><a href="#"></a>Contact</li> -->
+            </ul>
+            <img src="./images/menu-btn.png" alt="" class="menu-btn">
+        </div>
+    </nav>
+
+
+
+    <header>
+        <div class="header-content">
+            <h1>Redefining Bespoke Suit and <br>Launndry Luxury & Care.</h1>
+            <p>Experience premium laundry services tailored to your needs with uncompromising quality and attention to
+                detail.</p>
+            <a href="#" class="ctn mt-5">Get Started</a>
+        </div>
+    </header>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click', () => {
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+
+</body>
+
+</html>

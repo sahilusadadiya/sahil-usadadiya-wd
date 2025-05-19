@@ -626,7 +626,7 @@ li {
 
 
 
-/* about-pages-csss--------------- */
+/* about-pages-css--------------- */
 
 /* our-story-section-css------------- */
 
@@ -895,5 +895,167 @@ li {
         margin-top: 20px;
         padding: 13px 20px;
         font-size: 16px;
+    }
+}
+
+
+
+/* ---------product-page-css-------- */
+.search-input input {}
+
+.search-input {
+    position: relative;
+    /* width: 500px; */
+}
+
+.search-input i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.search-input input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 20px !important;
+    padding: 10px 40px;
+}
+
+.search-input ::placeholder {
+    color: #8B8CA1;
+    font-size: 18px;
+}
+
+.filter-button button {
+    background-color: #F5F5F5;
+    color: #8B8CA1;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    border: 1px solid #ccc;
+
+}
+
+.filter-button i {
+    margin-right: 3px;
+}
+
+
+.product-title h3 {
+    color: #654638;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    width: 350px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: #ede9d0;
+    /* color: white; */
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.product-name p {
+    color: #654638;
+    font-size: 20px;
+}
+
+.product-name {
+    border: 1px solid #654638;
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    background: #EDE8D0;
+    padding: 10px;
+}
+
+.pro-title h3 {
+    color: #654638;
+    font-size: 23px;
+}
+
+.pro-title p {
+    color: #654638;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.pro-detail-list ul li {
+    list-style: disc;
+    text-align: left;
+    color: #654638;
+    font-weight: 500;
+}
+
+.pro-detail-list ul {
+    padding-left: 20px;
+    /* Controls space between bullet and text */
+}
+
+.pro-btn button {
+    color: #ffffff;
+    background: #654638;
+    border: none;
+    font-size: 16px;
+    padding: 12px 50px;
+    border-radius: 20px;
+}
+
+.row-margin {
+    margin-bottom: 70px;
+}
+
+@media (max-width:768px) {
+    .flip-card {
+        width: 100%;
+        height: auto;
+        perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        height: 450px;
+    }
+
+    .row-margin {
+        margin-bottom: 30px;
     }
 }

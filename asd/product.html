@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Additional Stylesheets -->
+    <link rel="stylesheet" href="./css/font-awesome-link.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <!-- Header Section -->
+    <div class="header-sections pb-4">
+        <!-- Mobile Header -->
+        <div class="mobile-header d-flex justify-content-between align-items-center px-3 py-2 d-md-none">
+            <a href="./index.html"><img src="./images/header-logo.png" alt="Logo" class="mobile-logo"></a>
+            <button class="menu-toggle" id="menuToggle">&#9776;</button>
+        </div>
+
+        <!-- Desktop Logo -->
+        <div class="header-logo text-center d-none d-md-block">
+            <a href="./index.html"><img src="./images/header-logo.png" alt=""></a>
+        </div>
+
+        <!-- Desktop Nav List -->
+        <div class="nav-list mt-3 d-none d-md-block">
+            <ul class="d-flex justify-content-center gap-4">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./about-us.html">
+                    <li>About</li>
+                </a>
+                <a>
+                    <li>Products</li>
+                </a>
+                <a>
+                    <li>Contact</li>
+                </a>
+                <a>
+                    <li>Testimonials</li>
+                </a>
+                <a href="./terms&condition.html">
+                    <li>Terms & Policies</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Side Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header d-flex justify-content-between align-items-center">
+            <a href="./index.html"><img src="./images/header-logo.png" alt="Logo" class="mobile-menu-logo"></a>
+            <button id="menuClose">&times;</button>
+        </div>
+        <ul class="mobile-menu-list">
+            <a href="./index.html">
+                <li>Home</li>
+            </a>
+            <a href="./about-us.html">
+                <li>About</li>
+            </a>
+            <a>
+                <li>Products</li>
+            </a>
+            <a>
+                <li>Contact</li>
+            </a>
+            <a>
+                <li>Testimonials</li>
+            </a>
+            <a href="./terms&condition.html">
+                <li>Terms & Policies</li>
+            </a>
+        </ul>
+    </div>
+
+
+    <div class="product-search-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-10">
+                    <div class="search-input">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search" width="500px">
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="filter-button">
+                        <a href=""><button><i class="fa-solid fa-filter"></i> Filter</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="product-section mb-4">
+        <div class="container">
+            <div class="product-title mt-5  mb-4">
+                <h3>Our Products</h3>
+            </div>
+
+            <div class="row row-margin row-gap">
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-1.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Wooden Ashtray</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Wooden Ashtray</h3>
+                                        <p>PRICE : 2000</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Introducing the “Perfect Wooden Ashtray” - a blend of elegance and
+                                                functionality.</li>
+                                            <li>The interior features a durable, easy-to-clean metal lining that
+                                                protects the wooden structure from stains and burns.</li>
+                                            <li>This thoughtful design ensures the ashtray remains as pristine as new,
+                                                maintaining its rich wooden finish over time.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-2.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Wooden Candle Holder Trio</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Wooden Candle Holder Trio</h3>
+                                        <p>PRICE : 2000</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Set of Three - Made with the finest quality Wood.</li>
+                                            <li>Whether as a striking centerpiece on your dining table, a sophisticated
+                                                accent in your living room, or a touch of luxury in your bedroom,</li>
+                                            <li>this candle stand transforms any space into a sanctuary of tranquility
+                                                and refined elegance.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-3.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Classic Tyay</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Classic Tray</h3>
+                                        <p>PRICE : 1200</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Our versatile wooden tray is designed to blend functionality with
+                                                elegance.</li>
+                                            <li>Whether placed on your office desk to organize pens and stationery, on
+                                                your dresser to hold watches, keys, and jewelry, or on your bedside
+                                                table to keep essentials within reach, this tray offers endless
+                                                possibilities. It also serves as a charming piece for serving small
+                                                bites or snacks when hosting guests</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-margin">
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-4.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Wooden Coster Set</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Wooden Coster Set</h3>
+                                        <p>PRICE : 1200</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Set of 4 Coasters & Stand</li>
+                                            <li>Crafted from premium quality wood, each coaster boasts a unique grain
+                                                pattern, ensuring no two pieces are alike. This natural variation
+                                                enhances its visual appeal, making it an eye-catching addition to your
+                                                home or office.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-5.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Made to Order</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Made to Order</h3>
+                                        <p>PRICE : 1200</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Make your wooden product truly special with our personalization option.
+                                                Whether it's engraving your name, a meaningful quote, or even your
+                                                company logo, we offer customized designs to add a personal touch.
+                                                Perfect for gifting or branding, this feature ensures your cherished
+                                                wooden piece stands out with elegance and individuality.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-6.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Pen Stand</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Pen Stand</h3>
+                                        <p>PRICE : 1500</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>--</li>
+                                            <li>---</li>
+                                            <li>--</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-margin">
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-7.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Phone Stand</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Phone Stand</h3>
+                                        <p>PRICE : 1000</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>--</li>
+                                            <li>--</li>
+                                            <li>--</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-8.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Pen Organiser</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Pen Organiser</h3>
+                                        <p>PRICE : 1200</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>--</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-9.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Multiuse Organiser</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Multiuse Organiser</h3>
+                                        <!-- <p>PRICE : 1500</p> -->
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>4 inch * 4 inch Organiser <br>₹ 850/-</li>
+                                            <li>8 inch * 4 inch Organiser <br>₹ 1500/-</li>
+                                            <li>8 inch * 8 inch Organiser <br>₹ 2100/- </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-margin">
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-10.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Dessert Stand</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Dessert Stand</h3>
+                                        <p>PRICE : 3000</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Two Tier Dessert Display - Made in the finest quality Wood.</li>
+                                            <li>Its thoughtful construction allows for easy dismantling, enabling each
+                                                tier to be used separately for versatile serving options. When not in
+                                                use, the display can be conveniently stored, saving space without
+                                                compromising on style.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-11.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Salad Bowl</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Salad Bowl</h3>
+                                        <p>PRICE : 3000</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>Expertly carved in one log wood.</li>
+                                            <li>Its spacious design makes it perfect for serving large, vibrant salads
+                                                or a variety of dishes, while its sleek, polished finish adds a touch of
+                                                luxury to your meals.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-title">
+                                        <h3>Salad Tossing Spoon</h3>
+                                        <p>PRICE : 750/-</p>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="product-card">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src="./images/product-12.png" alt="Avatar" width="100% ">
+                                    <div class="product-name m-0">
+                                        <p>Visiting Card</p>
+                                    </div>
+                                </div>
+                                <div class="flip-card-back product-details">
+                                    <div class="pro-title">
+                                        <h3>Visiting Card</h3>
+                                        <p>PRICE : 850</p>
+                                    </div>
+                                    <div class="pro-detail-list">
+                                        <ul>
+                                            <li>--</li>
+                                            <li>--</li>
+                                            <li>--</li>
+                                        </ul>
+                                    </div>
+                                    <div class="pro-btn">
+                                        <a href=""><button>Buy Now</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="footer-section" style="position: relative;">
+        <div class="footer-detail text-center">
+            <div class="footer-title">
+                <p>Fill free to contact us</p>
+            </div>
+            <div class="social-media-icons mt-4">
+                <ul class="d-flex justify-content-center">
+                    <li><img src="./images/Instagram (2).png" alt=""></li>
+                    <li><img src="./images/Facebook (2).png" alt=""></li>
+                </ul>
+            </div>
+            <div class="pages-list">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Products</li>
+                    <li>Testimonials</li>
+                    <li>Contact Us</li>
+                    <li>Terms & Condition</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-left-images">
+            <div class="footer-images">
+                <img src="./images/Monstera 1.png" alt="">
+            </div>
+        </div>
+        <div class="footer-right-images">
+            <div class="footer-images">
+                <img src="./images/Fern 1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuClose = document.getElementById('menuClose');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+    </script>
+
+
+</body>
+
+</html>
