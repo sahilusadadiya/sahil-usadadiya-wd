@@ -17,13 +17,11 @@
     <nav class="navbar">
         <div class="container header-padding">
             <img src="./images/BH Logo 1.png" alt="">
-            <!-- <h1 class="logo">ADVENTURE</h1> -->
-            <ul class="nav-links m-0">
-                <li class="active"><a href="./index.html">Home</a></li>
+            <ul class="nav-links ">
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./about-us.html">About us</a></li>
                 <li><a href="#">Service Page</a></li>
                 <li><a href="#">Contact us</a></li>
-                <!-- <li class="ctn"><a href="#"></a>Contact</li> -->
             </ul>
             <img src="./images/menu-btn.png" alt="" class="menu-btn">
         </div>
@@ -48,7 +46,7 @@
         </div>
         <div class="about-content">
             <div class="container">
-                <div class="row">
+                <div class="row row-gap">
                     <div class="col-lg-6">
                         <div class="about-image">
                             <img src="./images/about-img.png" alt="" width="90%">
@@ -73,7 +71,7 @@
 
     <section class="our-value-section">
         <div class="container">
-            <div class="row">
+            <div class="row row-gap">
                 <div class="col-lg-6 d-flex align-items-center">
                     <div class="our-value-text">
                         <h3>Our Core Value</h3>
@@ -127,7 +125,7 @@
             <h3>Why Choose us?</h3>
         </div>
         <div class="container">
-            <div class="row mt-5">
+            <div class="row mt-5 row-gap res-margin-top">
                 <div class="col-lg-3">
                     <div class="choose-card">
                         <div class="card-detail">
@@ -172,19 +170,18 @@
 
     <section class="launndry-care-section">
         <div class="container">
-            <div class="row position-relative">
+            <div class="row position-relative row-gap">
                 <div class="col-lg-6">
                     <div class="laundry-title" style="margin-left: 80px;">
                         <p>Ready for Premium Laundry Care?</p>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center btn-responsive">
                     <div class="get-in-touch-btn">
                         <a href="#"><button>Get in touch</button></a>
                     </div>
                 </div>
 
-                <!-- Circle Image -->
                 <div class="circle-img">
                     <img src="./images/circle (2).png" alt="circle background">
                 </div>
@@ -201,21 +198,24 @@
             <div class="footer-title">
                 <p>Join Our Newsletter & <br>get daily updates.</p>
             </div>
-            <div class="input-field d-flex gap-2 justify-content-center mt-3">
+            <div class="input-field d-flex gap-1 justify-content-center mt-3">
                 <input type="text" placeholder="enter your email address">
                 <a href="" class="ctn" style="color: #000000; font-weight: 600; border-radius: 50px;">Submit</a>
             </div>
 
             <div class="page-list mt-4">
-                <ul class="d-flex gap-5 justify-content-center p-0 m-0">
-                    <li style="list-style: none;">Home</li>
-                    <li>About us</li>
-                    <li>Service</li>
-                    <li>Contact us</li>
+                <ul class="d-flex gap-5 justify-content-center p-0 m-0 footer-list">
+                    <li style="list-style: none;"><a href="./index.html">Home</a></li>
+                    <li><a href="./about-us.html">About us</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
             </div>
         </div>
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
     <script>
         const menuBtn = document.querySelector('.menu-btn')
