@@ -23,7 +23,7 @@ p {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 li {
@@ -45,6 +45,12 @@ li {
     /* position: fixed; */
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff !important;
+    list-style: none;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -56,8 +62,8 @@ li {
     font-size: 18px;
 }
 
-.active {
-    color: #EF615A;
+.active a {
+    color: #EF615A !important;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -322,4 +328,109 @@ header {
     max-width: 400px;
     margin: auto;
     /* prevents overflow on small screens */
+}
+
+
+
+
+
+
+
+
+/* about-page-csss------- */
+.about-banner-section {
+    background-image: url(../images/about-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Ensures full coverage */
+    height: 380px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-title h3 {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+
+/* founder-story-section========== */
+
+.founder-story-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.founder-story-title h3 {
+    font-size: 80px;
+    color: #212121;
+    text-align: center;
+}
+
+.founder-story-text p {
+    color: #585858;
+    font-size: 20px;
+}
+
+
+
+
+/* mission-vision-sectio--------- */
+.our-mission-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mission-title h3 {
+    font-size: 100px;
+    color: #212121;
+}
+
+.mission-sub-title p {
+    font-size: 20px;
+    color: #585858;
+}
+
+
+
+
+
+/* why-choose-section----------- */
+.our-commitment-section {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.our-commitment-title h3 {
+    font-size: 80px;
+    color: #212121;
+}
+
+.commitment-card {
+    border: 2px dotted #000000;
+    border-radius: 10px;
+    padding: 20px;
+    height: 340px;
+}
+
+.card-detail h4 {
+    color: #212121;
+    font-size: 23px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.card-detail p {
+    color: #7A7A7A;
+    font-size: 20px;
 }
