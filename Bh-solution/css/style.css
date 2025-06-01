@@ -1,12 +1,13 @@
 /* --------general-css-start------------- */
 /* @import url('https://fonts.googleapis.com/css2?family=Ivy+Mode:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); */
 
 
 * {
     margin: 0px;
     box-sizing: border-box;
     padding: 0px;
-    /* font-family: 'Nexa Trial', sans-serif; */
+    font-family: 'Ivy Mode';
 }
 
 .header-padding {
@@ -15,7 +16,9 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Ivy Mode', serif;
+    /* font-family: 'Ivy Mode', serif; */
+    /* font-family: 'Ivy Mode'; */
+
 }
 
 p {
